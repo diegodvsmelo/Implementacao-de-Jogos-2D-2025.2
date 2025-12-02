@@ -22,6 +22,8 @@ public class ComboManager : MonoBehaviour
 
     [Header("Configurações das skills")]
     public float waterSkillOffset = 1f;
+    public float natureSpawnRadius = 2f;
+    public int natureSpawnNumber = 3;
 
     public struct ComboInput
     {
@@ -38,18 +40,18 @@ public class ComboManager : MonoBehaviour
     void OnEnable()
     {
         controls.PlayerControls.Enable();
-        controls.PlayerControls.Fire.performed += FireHandler;
-        controls.PlayerControls.Water.performed += WaterHandler;
-        controls.PlayerControls.Air.performed += AirHandler;
-        controls.PlayerControls.Earth.performed += EarthHandler;
+        controls.PlayerControls.Q.performed += FireHandler;
+        controls.PlayerControls.W.performed += WaterHandler;
+        controls.PlayerControls.E.performed += AirHandler;
+        controls.PlayerControls.R.performed += EarthHandler;
     }
     void OnDisable()
     {
         controls.PlayerControls.Disable();
-        controls.PlayerControls.Fire.performed -= FireHandler;
-        controls.PlayerControls.Water.performed -= WaterHandler;
-        controls.PlayerControls.Air.performed -= AirHandler;
-        controls.PlayerControls.Earth.performed -= EarthHandler;
+        controls.PlayerControls.Q.performed -= FireHandler;
+        controls.PlayerControls.W.performed -= WaterHandler;
+        controls.PlayerControls.E.performed -= AirHandler;
+        controls.PlayerControls.R.performed -= EarthHandler;
     }
     //----------GETTERS----------
     public List<ComboInput> CurrentInputBuffer
@@ -72,7 +74,7 @@ public class ComboManager : MonoBehaviour
         {
             return;
         }
-        if (IsOnCoolDown(fireSkill.key1, fireSkill.coolDown))
+        if (IsOnCoolDown(fireSkill.skillName, fireSkill.cooldown))
         {
             return;
         }
@@ -112,7 +114,7 @@ public class ComboManager : MonoBehaviour
         {
             return;
         }
-        if (IsOnCoolDown(waterSkill.key1, waterSkill.coolDown))
+        if (IsOnCoolDown(waterSkill.skillName, waterSkill.cooldown))
         {
             return;
         }
@@ -150,7 +152,7 @@ public class ComboManager : MonoBehaviour
 
             return;
         }
-        if (IsOnCoolDown(airSkill.key1, airSkill.coolDown))
+        if (IsOnCoolDown(airSkill.skillName, airSkill.cooldown))
         {
             return;
         }
@@ -188,7 +190,7 @@ public class ComboManager : MonoBehaviour
         {
             return;
         }
-        if (IsOnCoolDown(earthSkill.key1, earthSkill.coolDown))
+        if (IsOnCoolDown(earthSkill.skillName, earthSkill.cooldown))
         {
             return;
         }
@@ -219,7 +221,7 @@ public class ComboManager : MonoBehaviour
     }
     private void CastSimpleSkill(SkillData skill)
     {
-        cooldownTracker[skill.key1] = Time.time;
+        cooldownTracker[skill.skillName] = Time.time;
         switch (skill.behaviorType)
         {
             case SkillBehaviorType.projectile:
@@ -235,6 +237,9 @@ public class ComboManager : MonoBehaviour
 
             case SkillBehaviorType.groundArea:
                 CastGroundArea(skill);
+                break;
+            case SkillBehaviorType.summonMinion:
+                CastSummon(skill); // Chama a nova função
                 break;
         }   
     }
@@ -276,6 +281,15 @@ public class ComboManager : MonoBehaviour
     {
         Instantiate(skill.effectPrefab, (Vector2)MousePosition(), Quaternion.identity);
     }
+    private void CastSummon(SkillData skill)
+    {
+    for(int i = 0; i < natureSpawnNumber; i++)
+    {
+        Vector2 randomOffset = UnityEngine.Random.insideUnitCircle * natureSpawnRadius;
+        Vector2 spawnPosition = (Vector2)transform.position + randomOffset;
+        Instantiate(skill.effectPrefab, spawnPosition, Quaternion.identity);
+    }
+    }
     public void CheckForCombo()
     {
 
@@ -303,11 +317,11 @@ public class ComboManager : MonoBehaviour
         yield return new WaitForSeconds(comboWindow);
         inputBuffer.Clear();
     }
-    private SkillData FindSkill(string key1)
+    private SkillData FindSkill(string _skillName)
     {
         foreach (var recipe in skillRecipes)
         {      
-            if (key1 == recipe.key1)
+            if (_skillName == recipe.skillName)
             {
                 return recipe;
             }

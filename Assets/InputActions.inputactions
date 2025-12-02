@@ -16,7 +16,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Fire",
+                    "name": "Q",
                     "type": "Button",
                     "id": "54f745fa-b8c3-4d67-996b-ccc3f5193a93",
                     "expectedControlType": "",
@@ -25,7 +25,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Water",
+                    "name": "W",
                     "type": "Button",
                     "id": "a365185a-9d82-445a-8177-a19abb85a1b8",
                     "expectedControlType": "",
@@ -34,7 +34,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Air",
+                    "name": "E",
                     "type": "Button",
                     "id": "dbc246f7-1f8b-4021-97c1-7650cf891407",
                     "expectedControlType": "",
@@ -43,7 +43,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Earth",
+                    "name": "R",
                     "type": "Button",
                     "id": "734a93dd-82d9-4485-aa5b-32f6815c67eb",
                     "expectedControlType": "",
@@ -71,7 +71,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Fire",
+                    "action": "Q",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -82,7 +82,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Water",
+                    "action": "W",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -93,7 +93,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Air",
+                    "action": "E",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -104,7 +104,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Earth",
+                    "action": "R",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

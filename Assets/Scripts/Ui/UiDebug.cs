@@ -12,12 +12,11 @@ public class UiDebug : MonoBehaviour
     public TextMeshProUGUI statMultitxt;
     public TextMeshProUGUI cdMultitxt;
 
-    [Header("ComboInfo")]
-    public ComboManager comboManager;
+    [Header("SkillsInfo")]
+    public SkillQueueManager skillManager;
     public GameObject debugUI;
     public bool isDebugUIActive;
 
-    public TextMeshProUGUI comboText;
     public TextMeshProUGUI cooldownText;
 
     [Header("PlayerStats")]
@@ -40,98 +39,53 @@ public class UiDebug : MonoBehaviour
         else
         {
             debugUI.SetActive(true);
-            UpdateComboText();
             UpdateCooldownsText();
             UpdateWaveInfo();
         }
     }
-    void UpdateComboText()
-    {
-        string comboName = comboManager.LastUsedComboName;
-
-
-        if (string.IsNullOrEmpty(comboName))
-        {
-            comboText.text = "Último Combo: N/A";
-            return;
-        }
-
-
-        var tracker = comboManager.CooldownTracker;
-
-
-        ComboData foundRecipe = null;
-        foreach (ComboData recipe in comboManager.comboRecipes)
-        {
-
-            if (recipe.name == comboName)
-            {
-                foundRecipe = recipe;
-                break;
-            }
-        }
-
-        if (foundRecipe != null && tracker.ContainsKey(comboName))
-        {
-
-            float duration = foundRecipe.coolDown;
-            float timePassed = Time.time - tracker[comboName];
-            float timeRemaining = duration - timePassed;
-
-            if (timeRemaining > 0)
-            {
-
-                comboText.text = "Último Combo: " + comboName + " (" + timeRemaining.ToString("F1") + "s)";
-            }
-            else
-            {
-
-                comboText.text = "Último Combo: " + comboName + " (Pronto)";
-            }
-        }
-        else
-        {
-
-            comboText.text = "Último Combo: " + comboName;
-        }
-    }
+    
 
     void UpdateCooldownsText()
     {
-        string cdString = "Cooldowns:\n";
+        string cdString = "Cooldowns Ativos:\n";
 
-        var tracker = comboManager.CooldownTracker;
-
-
-        foreach (SkillData skill in comboManager.skillRecipes)
+        // Agora iteramos pelos 4 SLOTS ATIVOS (Q, W, E, R)
+        for (int i = 0; i < skillManager.activeSlots.Length; i++)
         {
-            string skillName = skill.key1;
-            float duration = skill.coolDown;
+            SkillState state = skillManager.activeSlots[i];
 
-            if (tracker.ContainsKey(skillName))
+            // Se o slot não estiver vazio (tem uma skill aprendida)
+            if (state != null)
             {
+                string skillName = state.data.skillName;
+                float duration = state.data.cooldown;
+                float lastUsed = state.lastUsedTime;
 
-                float timePassed = Time.time - tracker[skillName];
+                // Matemática do Cooldown
+                float timePassed = Time.time - lastUsed;
                 float timeRemaining = duration - timePassed;
+
+                string keyName = ""; // Só pra ficar bonito na UI
+                if (i == 0) keyName = "[Q] ";
+                if (i == 1) keyName = "[W] ";
+                if (i == 2) keyName = "[E] ";
+                if (i == 3) keyName = "[R] ";
 
                 if (timeRemaining > 0)
                 {
-
-                    cdString += skillName + ": " + timeRemaining.ToString("F1") + "s\n";
+                    cdString += keyName + skillName + ": " + timeRemaining.ToString("F1") + "s\n";
                 }
                 else
                 {
-
-                    cdString += skillName + ": Pronto\n";
+                    // Mostra também as cargas restantes!
+                    cdString += keyName + skillName + ": Pronto (" + state.currentCharges + "x)\n";
                 }
             }
             else
             {
-
-                cdString += skillName + ": Pronto\n";
+                cdString += $"Slot {i}: Vazio\n";
             }
         }
-
 
         cooldownText.text = cdString;
     }

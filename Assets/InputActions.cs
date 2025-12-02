@@ -102,7 +102,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Fire"",
+                    ""name"": ""Q"",
                     ""type"": ""Button"",
                     ""id"": ""54f745fa-b8c3-4d67-996b-ccc3f5193a93"",
                     ""expectedControlType"": """",
@@ -111,7 +111,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Water"",
+                    ""name"": ""W"",
                     ""type"": ""Button"",
                     ""id"": ""a365185a-9d82-445a-8177-a19abb85a1b8"",
                     ""expectedControlType"": """",
@@ -120,7 +120,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Air"",
+                    ""name"": ""E"",
                     ""type"": ""Button"",
                     ""id"": ""dbc246f7-1f8b-4021-97c1-7650cf891407"",
                     ""expectedControlType"": """",
@@ -129,7 +129,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Earth"",
+                    ""name"": ""R"",
                     ""type"": ""Button"",
                     ""id"": ""734a93dd-82d9-4485-aa5b-32f6815c67eb"",
                     ""expectedControlType"": """",
@@ -157,7 +157,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Fire"",
+                    ""action"": ""Q"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -168,7 +168,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Water"",
+                    ""action"": ""W"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -179,7 +179,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Air"",
+                    ""action"": ""E"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -190,7 +190,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Earth"",
+                    ""action"": ""R"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -230,10 +230,10 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         // PlayerControls
         m_PlayerControls = asset.FindActionMap("PlayerControls", throwIfNotFound: true);
         m_PlayerControls_Walk = m_PlayerControls.FindAction("Walk", throwIfNotFound: true);
-        m_PlayerControls_Fire = m_PlayerControls.FindAction("Fire", throwIfNotFound: true);
-        m_PlayerControls_Water = m_PlayerControls.FindAction("Water", throwIfNotFound: true);
-        m_PlayerControls_Air = m_PlayerControls.FindAction("Air", throwIfNotFound: true);
-        m_PlayerControls_Earth = m_PlayerControls.FindAction("Earth", throwIfNotFound: true);
+        m_PlayerControls_Q = m_PlayerControls.FindAction("Q", throwIfNotFound: true);
+        m_PlayerControls_W = m_PlayerControls.FindAction("W", throwIfNotFound: true);
+        m_PlayerControls_E = m_PlayerControls.FindAction("E", throwIfNotFound: true);
+        m_PlayerControls_R = m_PlayerControls.FindAction("R", throwIfNotFound: true);
     }
 
     ~@InputActions()
@@ -315,10 +315,10 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_PlayerControls;
     private List<IPlayerControlsActions> m_PlayerControlsActionsCallbackInterfaces = new List<IPlayerControlsActions>();
     private readonly InputAction m_PlayerControls_Walk;
-    private readonly InputAction m_PlayerControls_Fire;
-    private readonly InputAction m_PlayerControls_Water;
-    private readonly InputAction m_PlayerControls_Air;
-    private readonly InputAction m_PlayerControls_Earth;
+    private readonly InputAction m_PlayerControls_Q;
+    private readonly InputAction m_PlayerControls_W;
+    private readonly InputAction m_PlayerControls_E;
+    private readonly InputAction m_PlayerControls_R;
     /// <summary>
     /// Provides access to input actions defined in input action map "PlayerControls".
     /// </summary>
@@ -335,21 +335,21 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Walk => m_Wrapper.m_PlayerControls_Walk;
         /// <summary>
-        /// Provides access to the underlying input action "PlayerControls/Fire".
+        /// Provides access to the underlying input action "PlayerControls/Q".
         /// </summary>
-        public InputAction @Fire => m_Wrapper.m_PlayerControls_Fire;
+        public InputAction @Q => m_Wrapper.m_PlayerControls_Q;
         /// <summary>
-        /// Provides access to the underlying input action "PlayerControls/Water".
+        /// Provides access to the underlying input action "PlayerControls/W".
         /// </summary>
-        public InputAction @Water => m_Wrapper.m_PlayerControls_Water;
+        public InputAction @W => m_Wrapper.m_PlayerControls_W;
         /// <summary>
-        /// Provides access to the underlying input action "PlayerControls/Air".
+        /// Provides access to the underlying input action "PlayerControls/E".
         /// </summary>
-        public InputAction @Air => m_Wrapper.m_PlayerControls_Air;
+        public InputAction @E => m_Wrapper.m_PlayerControls_E;
         /// <summary>
-        /// Provides access to the underlying input action "PlayerControls/Earth".
+        /// Provides access to the underlying input action "PlayerControls/R".
         /// </summary>
-        public InputAction @Earth => m_Wrapper.m_PlayerControls_Earth;
+        public InputAction @R => m_Wrapper.m_PlayerControls_R;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -379,18 +379,18 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Walk.started += instance.OnWalk;
             @Walk.performed += instance.OnWalk;
             @Walk.canceled += instance.OnWalk;
-            @Fire.started += instance.OnFire;
-            @Fire.performed += instance.OnFire;
-            @Fire.canceled += instance.OnFire;
-            @Water.started += instance.OnWater;
-            @Water.performed += instance.OnWater;
-            @Water.canceled += instance.OnWater;
-            @Air.started += instance.OnAir;
-            @Air.performed += instance.OnAir;
-            @Air.canceled += instance.OnAir;
-            @Earth.started += instance.OnEarth;
-            @Earth.performed += instance.OnEarth;
-            @Earth.canceled += instance.OnEarth;
+            @Q.started += instance.OnQ;
+            @Q.performed += instance.OnQ;
+            @Q.canceled += instance.OnQ;
+            @W.started += instance.OnW;
+            @W.performed += instance.OnW;
+            @W.canceled += instance.OnW;
+            @E.started += instance.OnE;
+            @E.performed += instance.OnE;
+            @E.canceled += instance.OnE;
+            @R.started += instance.OnR;
+            @R.performed += instance.OnR;
+            @R.canceled += instance.OnR;
         }
 
         /// <summary>
@@ -405,18 +405,18 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Walk.started -= instance.OnWalk;
             @Walk.performed -= instance.OnWalk;
             @Walk.canceled -= instance.OnWalk;
-            @Fire.started -= instance.OnFire;
-            @Fire.performed -= instance.OnFire;
-            @Fire.canceled -= instance.OnFire;
-            @Water.started -= instance.OnWater;
-            @Water.performed -= instance.OnWater;
-            @Water.canceled -= instance.OnWater;
-            @Air.started -= instance.OnAir;
-            @Air.performed -= instance.OnAir;
-            @Air.canceled -= instance.OnAir;
-            @Earth.started -= instance.OnEarth;
-            @Earth.performed -= instance.OnEarth;
-            @Earth.canceled -= instance.OnEarth;
+            @Q.started -= instance.OnQ;
+            @Q.performed -= instance.OnQ;
+            @Q.canceled -= instance.OnQ;
+            @W.started -= instance.OnW;
+            @W.performed -= instance.OnW;
+            @W.canceled -= instance.OnW;
+            @E.started -= instance.OnE;
+            @E.performed -= instance.OnE;
+            @E.canceled -= instance.OnE;
+            @R.started -= instance.OnR;
+            @R.performed -= instance.OnR;
+            @R.canceled -= instance.OnR;
         }
 
         /// <summary>
@@ -491,32 +491,32 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnWalk(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Fire" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Q" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnFire(InputAction.CallbackContext context);
+        void OnQ(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Water" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "W" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnWater(InputAction.CallbackContext context);
+        void OnW(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Air" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "E" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnAir(InputAction.CallbackContext context);
+        void OnE(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Earth" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "R" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnEarth(InputAction.CallbackContext context);
+        void OnR(InputAction.CallbackContext context);
     }
 }

@@ -5,15 +5,18 @@ public enum SkillBehaviorType
     projectile,
     orbiting,
     groundArea,
-    aoe
+    aoe,
+    summonMinion
 }
 //para adicionar a opção no menu Assets> Create> Game> ComboRecipe
 [CreateAssetMenu(fileName = "NewSkill", menuName = "Game/SimpleSkill")]
 public class SkillData : ScriptableObject
 {
-    public string key1;
+    public string skillName;
     public GameObject effectPrefab;
-    public float coolDown;
-
+    public float cooldown;
     public SkillBehaviorType behaviorType;
+
+    [Header("Sistema de Fila")]
+    public int maxCharges = 5;
 }
