@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         if (Vector2.Distance(targetPosition, (Vector2)transform.position) >0.2)
         {
             Vector2 direction = targetPosition - (Vector2)transform.position;
-            
+
             normalizedDirection = direction.normalized;
         }
         else
