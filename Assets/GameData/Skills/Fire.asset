@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104504fa9767fe143be3e859fb89a53d, type: 3}
   m_Name: Fire
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  key1: Fire
+  skillName: Fire
   effectPrefab: {fileID: 3891154389867742337, guid: 54b936c2200a3d74f9147fad0509d45c, type: 3}
-  coolDown: 3
+  cooldown: 1
+  behaviorType: 0
+  maxCharges: 5

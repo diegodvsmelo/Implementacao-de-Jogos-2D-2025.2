@@ -7,6 +7,37 @@ using UnityEngine.Rendering;
 
 public class UiDebug : MonoBehaviour
 {
+    [Header("Fire")]
+    public TextMeshProUGUI firetxt;
+    public Button fireButton;
+
+    [Header("Lightning")]
+    public TextMeshProUGUI lightningtxt;
+    public Button lightningButton;
+
+    [Header("Nature")]
+    public TextMeshProUGUI naturetxt;
+    public Button natureButton;
+
+    [Header("Dark")]
+    public TextMeshProUGUI darktxt;
+    public Button darkButton;
+
+    [Header("Light")]
+    public TextMeshProUGUI lighttxt;
+    public Button lightButton;
+
+    [Header("Earth")]
+    public TextMeshProUGUI earthtxt;
+    public Button earthButton;
+    [Header("Air")]
+    public TextMeshProUGUI airtxt;
+    public Button airButton;
+
+    [Header("Water")]
+    public TextMeshProUGUI watertxt;
+    public Button waterButton;
+
     [Header("WaveInfo")]
     public TextMeshProUGUI leveltxt;
     public TextMeshProUGUI statMultitxt;

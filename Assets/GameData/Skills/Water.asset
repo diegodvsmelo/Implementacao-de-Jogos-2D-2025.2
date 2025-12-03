@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104504fa9767fe143be3e859fb89a53d, type: 3}
   m_Name: Water
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  key1: Water
+  skillName: Water
   effectPrefab: {fileID: 41421025288903831, guid: 8ebb8d84e247a834794a8a13a6a09b5e, type: 3}
-  coolDown: 2
+  cooldown: 2
   behaviorType: 3
+  maxCharges: 5

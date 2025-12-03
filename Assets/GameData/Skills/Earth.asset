@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104504fa9767fe143be3e859fb89a53d, type: 3}
   m_Name: Earth
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  key1: Earth
+  skillName: Earth
   effectPrefab: {fileID: 8685451268581175789, guid: 1267167579901824095d206715df207d, type: 3}
-  coolDown: 2
+  cooldown: 2
   behaviorType: 2
+  maxCharges: 5

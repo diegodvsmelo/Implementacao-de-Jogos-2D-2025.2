@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104504fa9767fe143be3e859fb89a53d, type: 3}
   m_Name: Nature
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  key1: Air
+  skillName: Nature
   effectPrefab: {fileID: 8360009020676850660, guid: ee2ba53c138803442982bf9fbb621cda, type: 3}
-  coolDown: 2
+  cooldown: 3
   behaviorType: 4
+  maxCharges: 5

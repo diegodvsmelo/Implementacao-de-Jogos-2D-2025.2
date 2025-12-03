@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104504fa9767fe143be3e859fb89a53d, type: 3}
   m_Name: Air
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
-  key1: Air
+  skillName: Air
   effectPrefab: {fileID: 8718019864925799169, guid: bdb72eef1176c8a468dd33179261c661, type: 3}
-  coolDown: 1
+  cooldown: 2
   behaviorType: 1
+  maxCharges: 5

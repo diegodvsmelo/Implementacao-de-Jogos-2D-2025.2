@@ -133,7 +133,20 @@ public class SkillQueueManager : MonoBehaviour
         }
     }
 
+public bool HasLearnedSkill(SkillData skillToCheck)
+    {
+        foreach (SkillState slot in activeSlots)
+        {
+            if (slot != null && slot.data == skillToCheck) return true;
+        }
 
+        foreach (SkillState queuedSkill in waitingQueue)
+        {
+            if (queuedSkill.data == skillToCheck) return true;
+        }
+
+        return false; 
+    }
     private void CastSkill(SkillData skill)
     {
         switch (skill.behaviorType)
@@ -214,4 +227,6 @@ public class SkillQueueManager : MonoBehaviour
         worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
         return worldPosition;
     }
+
+
 }
