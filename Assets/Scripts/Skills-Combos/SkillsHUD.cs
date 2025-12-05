@@ -1,70 +1,69 @@
-using TMPro;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SkillHUD : MonoBehaviour
 {
-    [Header("Skills")]
-    public Skill[] skills = new Skill[4];
+    [Header("Conexões")]
+    public SkillQueueManager skillManager;
 
-    [Header("UI References")]
-    public GameObject skillSlotPrefab;
-    public Transform skillContainer;
+    [Header("Slots Ativos (Q, W, E, R)")]
+    public SkillSlotUI[] activeSlots; 
 
-    private SkillSlot[] skillSlots;
+    [Header("Próxima Skill (Fila)")]
+    public SkillSlotUI nextSkillSlot; 
+    public Image nextSkillBorder; // A borda da imagem pequena
 
     void Start()
     {
-        InitializeSkillSlots();
+        // Busca automática do Player se não estiver assignado
+        if (skillManager == null)
+        {
+            GameObject player = GameObject.FindWithTag("Player");
+            if(player != null) skillManager = player.GetComponent<SkillQueueManager>();
+        }
     }
 
     void Update()
     {
-        UpdateSkills();
-        UpdateUI();
-    }
+        if (skillManager == null) return;
 
-    void InitializeSkillSlots()
-    {
-        skillSlots = new SkillSlot[skills.Length];
-
-        for (int i = 0; i < skills.Length; i++)
+        // 1. Atualiza Slots Ativos (Q, W, E, R)
+        for (int i = 0; i < activeSlots.Length; i++)
         {
-            GameObject slotObj = Instantiate(skillSlotPrefab, skillContainer);
-            skillSlots[i] = slotObj.GetComponent<SkillSlot>();
-            skillSlots[i].Initialize(skills[i]);
-        }
-    }
-
-    void UpdateSkills()
-    {
-        for (int i = 0; i < skills.Length; i++)
-        {
-            if (skills[i].currentCooldown > 0)
+            if (i < skillManager.activeSlots.Length)
             {
-                skills[i].currentCooldown -= Time.deltaTime;
-                if (skills[i].currentCooldown < 0)
-                    skills[i].currentCooldown = 0;
-            }
-
-            if (Input.GetKeyDown(skills[i].keyBind) && !skills[i].IsOnCooldown())
-            {
-                UseSkill(i);
+                activeSlots[i].UpdateSlot(skillManager.activeSlots[i]);
             }
         }
+
+        // 2. Atualiza a "Próxima Skill" da Fila
+        UpdateNextSkillUI();
     }
 
-    void UpdateUI()
+    void UpdateNextSkillUI()
     {
-        for (int i = 0; i < skills.Length; i++)
+        if (nextSkillSlot == null) return;
+
+        // Verifica se existe alguém na fila de espera
+        if (skillManager.waitingQueue.Count > 0)
         {
-            skillSlots[i].UpdateCooldown(skills[i].currentCooldown, skills[i].cooldown);
+            // Peek() olha quem é o PRIMEIRO da fila (Posição 4 no GDD)
+            // Essa é a skill que vai entrar assim que você gastar uma atual.
+            SkillState nextSkill = skillManager.waitingQueue.Peek();
+            
+            // Atualiza o ícone e textos do slot pequeno
+            nextSkillSlot.UpdateSlot(nextSkill);
+            
+            // GARANTIA: Cor Sólida (Sem transparência)
+            if(nextSkillBorder) nextSkillBorder.color = Color.white;
         }
-    }
-
-    void UseSkill(int index)
-    {
-        skills[index].currentCooldown = skills[index].cooldown;
+        else
+        {
+            // Se a fila estiver vazia (menos de 5 skills aprendidas)
+            nextSkillSlot.UpdateSlot(null);
+            
+            // Mantém a borda visível e branca (ou da cor original), sem ficar transparente
+            if(nextSkillBorder) nextSkillBorder.color = Color.white;
+        }
     }
 }

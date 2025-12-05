@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
   skillName: Air
   effectPrefab: {fileID: 8718019864925799169, guid: bdb72eef1176c8a468dd33179261c661, type: 3}
-  cooldown: 0
-  maxCharges: 0
+  cooldown: 1
+  maxCharges: 5
+  icon: {fileID: 7829400875499196315, guid: eecfa5f62d64b8d468415500bc8b7560, type: 3}
   damage: 0
   bounceCount: 0
   bounceRange: 0

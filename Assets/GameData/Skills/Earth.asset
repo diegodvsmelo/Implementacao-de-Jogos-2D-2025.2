@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
   skillName: Earth
   effectPrefab: {fileID: 8685451268581175789, guid: 1267167579901824095d206715df207d, type: 3}
-  cooldown: 0
-  maxCharges: 0
-  damage: 0
+  cooldown: 1
+  maxCharges: 5
+  icon: {fileID: 4017063373586681273, guid: 27e2bb98335a11f42abc432c2f0423e7, type: 3}
+  damage: 10
   bounceCount: 0
   bounceRange: 0
   behaviorType: 2

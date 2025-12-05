@@ -6,24 +6,16 @@ public class PlayerHealth : MonoBehaviour
     // Referências existentes
     private PlayerStats stats;
     public GameObject gameOverScreen;
-    public HealthBar healthBar;
-    private SpriteRenderer spriteRenderer; // Necessário para o efeito de piscar
+    private SpriteRenderer spriteRenderer; 
 
     [Header("Configurações de Invulnerabilidade")]
-    public float iFrameDuration = 1.0f; // Tempo imune (1s)
-    public int numberOfFlashes = 5;      // Quantas vezes pisca
+    public float iFrameDuration = 1.0f; 
+    public int numberOfFlashes = 5;      
     private bool isInvulnerable = false;
 
     [Header("Configurações de Knockback")]
-    public float knockbackForce = 5f; // Força do empurrão
-    public float knockbackRadius = 3f; // Raio ao redor do player que afeta inimigos
-
-    void Start()
-    {
-        stats = GetComponent<PlayerStats>();
-        healthBar.SetMaxHealth(stats.maxHealth);
-    }
-
+    public float knockbackForce = 5f; 
+    public float knockbackRadius = 3f; 
     void Awake()
     {
         stats = GetComponent<PlayerStats>();
@@ -32,21 +24,12 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        // 1. Checagem de segurança: Se estiver imune, não faz nada
         if (isInvulnerable) return;
 
-        // 2. Aplica o dano no seu PlayerStats (Mantendo sua lógica original)
-        stats.currentHealth -= damage;
-        healthBar.TakeDamage(damage);
+        // Passa a responsabilidade da matemática para o Stats
+        // Passamos valor negativo pois é dano
+        if(stats != null) stats.ModifyHealth(-damage);
 
-        // 3. Verifica morte
-        if (stats.currentHealth <= 0)
-        {
-            PlayerDeath();
-            return;
-        }
-
-        // 4. Se não morreu, ativa a defesa e o contra-ataque físico
         StartCoroutine(InvulnerabilityRoutine());
         ApplyAreaKnockback();
     }
@@ -54,7 +37,6 @@ public class PlayerHealth : MonoBehaviour
     public void Heal(int amount)
     {
         stats.currentHealth += amount;
-        healthBar.Heal(amount);
         if (stats.currentHealth > stats.maxHealth)
         {
             stats.currentHealth = stats.maxHealth;
@@ -63,10 +45,9 @@ public class PlayerHealth : MonoBehaviour
 
     public void PlayerDeath()
     {
-        // Mantendo sua lógica original
         gameOverScreen.SetActive(true);
         Time.timeScale = 0;
-        Destroy(this.gameObject); // Nota: Destruir o objeto para o som/efeitos visuais pode ser abrupto, mas mantive como pediu.
+        gameObject.SetActive(false);
     }
 
     // --- Novas Funcionalidades ---

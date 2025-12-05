@@ -4,15 +4,15 @@ using TMPro;
 
 public class HealthBar : MonoBehaviour
 {
-    [Header("Referências da UI")]
+    [Header("Referï¿½ncias da UI")]
     public Image healthBarFill;
     public TextMeshProUGUI healthText;
 
-    [Header("Configurações")]
+    [Header("Configuraï¿½ï¿½es")]
     public float maxHealth = 100f;
     private float currentHealth;
 
-    [Header("Animação (Opcional)")]
+    [Header("Animaï¿½ï¿½o (Opcional)")]
     public bool smoothTransition = true;
     public float transitionSpeed = 5f;
 
@@ -37,10 +37,24 @@ public class HealthBar : MonoBehaviour
         }
     }
 
-    public void SetMaxHealth(float max)
+    public void SetMaxHealth(float newMax,bool healDifference = true)
     {
-        maxHealth = max;
-        currentHealth = max;
+        if (healDifference)
+        {
+            // Se eu tinha 100/100 e fui pra 120, agora tenho 120/120
+            // Ou se eu tinha 50/100 e fui pra 120, ganho +20 e fico com 70/120
+            float difference = newMax - maxHealth;
+            if(difference > 0)
+            {
+                currentHealth += difference;
+            }
+        }
+
+        maxHealth = newMax;
+        
+        // Garante que a vida atual nÃ£o ultrapasse o novo mÃ¡ximo
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        
         UpdateHealthBar();
     }
 
@@ -66,7 +80,8 @@ public class HealthBar : MonoBehaviour
 
     void UpdateHealthBar()
     {
-        float fillAmount = currentHealth / maxHealth;
+        float fillAmount = 0f;
+        if (maxHealth > 0) fillAmount = currentHealth / maxHealth;
 
         if (smoothTransition)
         {
@@ -77,9 +92,10 @@ public class HealthBar : MonoBehaviour
             healthBarFill.fillAmount = fillAmount;
         }
 
+
         if (healthText != null)
         {
-            healthText.text = $"{Mathf.Ceil(currentHealth)}/{maxHealth}";
+            healthText.text = $"{Mathf.CeilToInt(currentHealth)} / {Mathf.CeilToInt(maxHealth)}";
         }
     }
 

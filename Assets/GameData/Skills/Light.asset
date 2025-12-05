@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
   skillName: Light
   effectPrefab: {fileID: 0}
-  cooldown: 0
-  maxCharges: 0
+  cooldown: 1
+  maxCharges: 5
+  icon: {fileID: 6574870644299172810, guid: 9a2bf68c19e127549b3e282c293dabfa, type: 3}
   damage: 0
   bounceCount: 0
   bounceRange: 0

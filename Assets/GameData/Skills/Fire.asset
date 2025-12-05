@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
   skillName: Fire
   effectPrefab: {fileID: 3891154389867742337, guid: 54b936c2200a3d74f9147fad0509d45c, type: 3}
-  cooldown: 0
+  cooldown: 1
   maxCharges: 5
+  icon: {fileID: 4153354448673283932, guid: 90c53ddaec1bcac4985bf4755633f5ff, type: 3}
   damage: 100
   bounceCount: 0
   bounceRange: 0

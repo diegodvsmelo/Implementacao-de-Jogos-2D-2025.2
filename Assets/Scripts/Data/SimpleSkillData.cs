@@ -17,6 +17,8 @@ public class SkillData : ScriptableObject
     public GameObject effectPrefab;
     public float cooldown;
     public int maxCharges;
+    [Header("Visual")]
+    public Sprite icon;
     
     [Header("Configurações Específicas")]
     public int damage;
