@@ -88,10 +88,10 @@ public class EnemyAI : MonoBehaviour
         }
     }
     //a função OnDestroy é chamada em todos os scripts de objetos quando são destruidos, como o script enemyHealth destroi o inimigo qnd a vida chega a zero, o script EnemyAI dele vai chamar a função OnDestroy abaixo, que vai tirar ele do array de inimigos no mapa
-    void OnDestroy()
+    private void OnDestroy()
     {
         EnemyManager.allEnemies.Remove(this);
-        PlayerExp playerExp = player.GetComponent<PlayerExp>();
+        var playerExp = player.GetComponent<PlayerExp>();
         if (playerExp != null)
         {
             playerExp.AddExp(this.exp); 
@@ -99,15 +99,13 @@ public class EnemyAI : MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-       if (collision.gameObject.CompareTag("Player"))
+        if (!collision.gameObject.CompareTag("Player")) return;
+        var playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
         {
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(damage);
-            }
-        } 
+            playerHealth.TakeDamage(damage);
+        }
     }
 }

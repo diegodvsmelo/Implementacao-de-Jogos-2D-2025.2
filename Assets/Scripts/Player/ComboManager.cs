@@ -236,6 +236,10 @@ public class ComboManager : MonoBehaviour
             case SkillBehaviorType.groundArea:
                 CastGroundArea(skill);
                 break;
+            
+            case SkillBehaviorType.chain:
+                CastChainLightning(skill);
+                break;
         }   
     }
 
@@ -268,6 +272,21 @@ public class ComboManager : MonoBehaviour
         GameObject splash = Instantiate(skill.effectPrefab, spawnPosition, rotation);
         splash.transform.SetParent(this.transform);
     }
+    
+    private void CastChainLightning(SkillData skill)
+    {
+        Vector2 mousePos = MousePosition();
+        
+        GameObject lightningObj = Instantiate(skill.effectPrefab, transform.position, Quaternion.identity);
+        
+        ChainLightningBehavior script = lightningObj.GetComponent<ChainLightningBehavior>();
+        if (script != null)
+        {
+            int finalDamage = Mathf.RoundToInt(skill.damage * stats.globalDamageMultiplier);
+            script.Setup(finalDamage, skill.bounceCount, skill.bounceRange, transform.position);
+        }
+    }
+    
     private void CastOrbiting(SkillData skill)
     {
         Instantiate(skill.effectPrefab, transform.position, Quaternion.identity, this.transform);
