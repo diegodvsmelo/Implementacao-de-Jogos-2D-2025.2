@@ -6,6 +6,7 @@ public class PlayerHealth : MonoBehaviour
     // Referências existentes
     private PlayerStats stats;
     public GameObject gameOverScreen;
+    public HealthBar healthBar;
     private SpriteRenderer spriteRenderer; // Necessário para o efeito de piscar
 
     [Header("Configurações de Invulnerabilidade")]
@@ -16,6 +17,12 @@ public class PlayerHealth : MonoBehaviour
     [Header("Configurações de Knockback")]
     public float knockbackForce = 5f; // Força do empurrão
     public float knockbackRadius = 3f; // Raio ao redor do player que afeta inimigos
+
+    void Start()
+    {
+        stats = GetComponent<PlayerStats>();
+        healthBar.SetMaxHealth(stats.maxHealth);
+    }
 
     void Awake()
     {
@@ -30,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
 
         // 2. Aplica o dano no seu PlayerStats (Mantendo sua lógica original)
         stats.currentHealth -= damage;
+        healthBar.TakeDamage(damage);
 
         // 3. Verifica morte
         if (stats.currentHealth <= 0)
@@ -46,7 +54,8 @@ public class PlayerHealth : MonoBehaviour
     public void Heal(int amount)
     {
         stats.currentHealth += amount;
-        if(stats.currentHealth > stats.maxHealth)
+        healthBar.Heal(amount);
+        if (stats.currentHealth > stats.maxHealth)
         {
             stats.currentHealth = stats.maxHealth;
         }
@@ -73,12 +82,12 @@ public class PlayerHealth : MonoBehaviour
             {
                 // Em vez de pegar o Rigidbody, pegamos o script de inteligência do inimigo
                 EnemyAI enemyAI = target.GetComponent<EnemyAI>();
-                
+
                 if (enemyAI != null)
                 {
                     // Calcula direção: Do Player PARA o Inimigo
                     Vector2 direction = (target.transform.position - transform.position).normalized;
-                    
+
                     // Chama a função que já existe no seu inimigo!
                     // Ela vai pausar o movimento dele e aplicar a força corretamente.
                     enemyAI.ApplyKnockback(direction, knockbackForce);
@@ -90,7 +99,7 @@ public class PlayerHealth : MonoBehaviour
     private IEnumerator InvulnerabilityRoutine()
     {
         isInvulnerable = true;
-        
+
         // Salva a cor original (geralmente branca)
         Color originalColor = spriteRenderer.color;
         // Cria a cor transparente
@@ -101,7 +110,7 @@ public class PlayerHealth : MonoBehaviour
         {
             spriteRenderer.color = flashColor;
             yield return new WaitForSeconds(iFrameDuration / (numberOfFlashes * 2));
-            
+
             spriteRenderer.color = originalColor;
             yield return new WaitForSeconds(iFrameDuration / (numberOfFlashes * 2));
         }

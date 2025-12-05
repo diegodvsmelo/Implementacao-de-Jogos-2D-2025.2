@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 74afc05ef61355749a6df9b14b3d1533
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5716570746651901812
+    second: Swordsman-Attack02_Effect_0
+  - first:
+      213: 1572318352594064110
+    second: Swordsman-Attack02_Effect_1
+  - first:
+      213: -2602799957417535102
+    second: Swordsman-Attack02_Effect_2
+  - first:
+      213: -1917791813217035214
+    second: Swordsman-Attack02_Effect_3
+  - first:
+      213: -1063731062000818120
+    second: Swordsman-Attack02_Effect_4
+  - first:
+      213: -8899730730831885593
+    second: Swordsman-Attack02_Effect_5
+  - first:
+      213: 8964920902202768783
+    second: Swordsman-Attack02_Effect_6
+  - first:
+      213: 2840365841484697120
+    second: Swordsman-Attack02_Effect_7
+  - first:
+      213: -2271816399665127058
+    second: Swordsman-Attack02_Effect_8
+  - first:
+      213: 323299384920387235
+    second: Swordsman-Attack02_Effect_9
+  - first:
+      213: -5380552810791830494
+    second: Swordsman-Attack02_Effect_10
+  - first:
+      213: 7864548219028853915
+    second: Swordsman-Attack02_Effect_11
+  - first:
+      213: -6440986910307770007
+    second: Swordsman-Attack02_Effect_12
+  - first:
+      213: -5672861574751342596
+    second: Swordsman-Attack02_Effect_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_0
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f739f6ec6555f40800000000000000
+      internalID: 5716570746651901812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_1
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 59
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee25230163ff1d510800000000000000
+      internalID: 1572318352594064110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_2
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 37
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289d9bc9a3ff0ebd0800000000000000
+      internalID: -2602799957417535102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_3
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 37
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23cdb0cb182a265e0800000000000000
+      internalID: -1917791813217035214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_4
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 54
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83864e82c3edc31f0800000000000000
+      internalID: -1063731062000818120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_5
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 56
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea43289d0ecd7480800000000000000
+      internalID: -8899730730831885593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_6
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 50
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d3547ff0cc96c70800000000000000
+      internalID: 8964920902202768783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_7
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 39
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e49d51fa10b6720800000000000000
+      internalID: 2840365841484697120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_8
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 37
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61ad076503e870e0800000000000000
+      internalID: -2271816399665127058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_9
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 38
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae2842e3179c7400800000000000000
+      internalID: 323299384920387235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_10
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 43
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22cf589d9bf6455b0800000000000000
+      internalID: -5380552810791830494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_11
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 52
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b945522efec742d60800000000000000
+      internalID: 7864548219028853915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_12
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 40
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9612a28e7840d96a0800000000000000
+      internalID: -6440986910307770007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Swordsman-Attack02_Effect_13
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 40
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffabf03472f541b0800000000000000
+      internalID: -5672861574751342596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Swordsman-Attack02_Effect_0: 5716570746651901812
+      Swordsman-Attack02_Effect_1: 1572318352594064110
+      Swordsman-Attack02_Effect_10: -5380552810791830494
+      Swordsman-Attack02_Effect_11: 7864548219028853915
+      Swordsman-Attack02_Effect_12: -6440986910307770007
+      Swordsman-Attack02_Effect_13: -5672861574751342596
+      Swordsman-Attack02_Effect_2: -2602799957417535102
+      Swordsman-Attack02_Effect_3: -1917791813217035214
+      Swordsman-Attack02_Effect_4: -1063731062000818120
+      Swordsman-Attack02_Effect_5: -8899730730831885593
+      Swordsman-Attack02_Effect_6: 8964920902202768783
+      Swordsman-Attack02_Effect_7: 2840365841484697120
+      Swordsman-Attack02_Effect_8: -2271816399665127058
+      Swordsman-Attack02_Effect_9: 323299384920387235
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -112,6 +112,9 @@ public class EnemySpawner : MonoBehaviour
             newEnemy.GetComponent<EnemyAI>().Initialize(dataToSpawn, currentStatMultiplier);
             newEnemy.GetComponent<EnemyHealth>().Initialize(dataToSpawn,currentStatMultiplier);
 
+            newEnemy.transform.localScale *= 5f;
+            newEnemy.GetComponent<BoxCollider2D>().size = new Vector2(0.2f, 0.2f);
+
             finalCooldown = currentWave.cooldownBetweenSpawn*currentCooldownMultiplier;
             yield return new WaitForSeconds(finalCooldown);
         }

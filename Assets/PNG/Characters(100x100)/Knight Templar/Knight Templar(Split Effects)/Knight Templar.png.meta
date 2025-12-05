@@ -1,0 +1,1677 @@
+fileFormatVersion: 2
+guid: a0545563401445b4e89c5e6210c59488
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 868370677313445676
+    second: Knight Templar_0
+  - first:
+      213: 7896936911979272719
+    second: Knight Templar_1
+  - first:
+      213: -4194554032326281960
+    second: Knight Templar_2
+  - first:
+      213: 8277879585618534816
+    second: Knight Templar_3
+  - first:
+      213: -6377646452248229005
+    second: Knight Templar_4
+  - first:
+      213: 894250402087251673
+    second: Knight Templar_5
+  - first:
+      213: 6807845371903191339
+    second: Knight Templar_6
+  - first:
+      213: -8252185879857593762
+    second: Knight Templar_7
+  - first:
+      213: 6487792607171154406
+    second: Knight Templar_8
+  - first:
+      213: 6385615749154467922
+    second: Knight Templar_9
+  - first:
+      213: 5920874977844248276
+    second: Knight Templar_10
+  - first:
+      213: -2949129293835158658
+    second: Knight Templar_11
+  - first:
+      213: 214093250993783728
+    second: Knight Templar_12
+  - first:
+      213: -5966386086919352668
+    second: Knight Templar_13
+  - first:
+      213: -8111832338782106824
+    second: Knight Templar_14
+  - first:
+      213: 6993042563217141510
+    second: Knight Templar_15
+  - first:
+      213: -1483179366202944828
+    second: Knight Templar_16
+  - first:
+      213: -5325021550340643671
+    second: Knight Templar_17
+  - first:
+      213: -4804625319599239110
+    second: Knight Templar_18
+  - first:
+      213: 6630959584085279354
+    second: Knight Templar_19
+  - first:
+      213: -3471315421684153715
+    second: Knight Templar_20
+  - first:
+      213: 7388180649387629279
+    second: Knight Templar_21
+  - first:
+      213: -8562504146692560016
+    second: Knight Templar_22
+  - first:
+      213: -6536978327237339284
+    second: Knight Templar_23
+  - first:
+      213: 3028206406148114280
+    second: Knight Templar_24
+  - first:
+      213: -6314933286888589497
+    second: Knight Templar_25
+  - first:
+      213: 381519206015160221
+    second: Knight Templar_26
+  - first:
+      213: -494930887596206363
+    second: Knight Templar_27
+  - first:
+      213: -7602551801935229060
+    second: Knight Templar_28
+  - first:
+      213: 947299710910931929
+    second: Knight Templar_29
+  - first:
+      213: 8338502524283929617
+    second: Knight Templar_30
+  - first:
+      213: -1386064269844263357
+    second: Knight Templar_31
+  - first:
+      213: 7951230458855576583
+    second: Knight Templar_32
+  - first:
+      213: -5787255903246371733
+    second: Knight Templar_33
+  - first:
+      213: 8876480148170206203
+    second: Knight Templar_34
+  - first:
+      213: 5170067624137318373
+    second: Knight Templar_35
+  - first:
+      213: -3649309969086857116
+    second: Knight Templar_36
+  - first:
+      213: 5147108089252840916
+    second: Knight Templar_37
+  - first:
+      213: -438865656409613289
+    second: Knight Templar_38
+  - first:
+      213: 4276546969206007820
+    second: Knight Templar_39
+  - first:
+      213: -1490497907279048704
+    second: Knight Templar_40
+  - first:
+      213: 7523525231667722456
+    second: Knight Templar_41
+  - first:
+      213: -4183414681803331955
+    second: Knight Templar_42
+  - first:
+      213: 4561470417802131809
+    second: Knight Templar_43
+  - first:
+      213: 1466427899567418547
+    second: Knight Templar_44
+  - first:
+      213: 7473418403727387307
+    second: Knight Templar_45
+  - first:
+      213: -8526290120618983
+    second: Knight Templar_46
+  - first:
+      213: 3632696774933692377
+    second: Knight Templar_47
+  - first:
+      213: -5166754508242470040
+    second: Knight Templar_48
+  - first:
+      213: -4004848114060891686
+    second: Knight Templar_49
+  - first:
+      213: -1639136013316973740
+    second: Knight Templar_50
+  - first:
+      213: -6547557376668252356
+    second: Knight Templar_51
+  - first:
+      213: -7043698159388577373
+    second: Knight Templar_52
+  - first:
+      213: -7406179757358852369
+    second: Knight Templar_53
+  - first:
+      213: 601075490870523284
+    second: Knight Templar_54
+  - first:
+      213: 3160059971196627576
+    second: Knight Templar_55
+  - first:
+      213: -6776048552073532198
+    second: Knight Templar_56
+  - first:
+      213: -3445759042863594617
+    second: Knight Templar_57
+  - first:
+      213: 2303825578980801067
+    second: Knight Templar_58
+  - first:
+      213: 9048751814169300876
+    second: Knight Templar_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Knight Templar_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 842
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f12aab7821d0c00800000000000000
+      internalID: 868370677313445676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 842
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ad13c184e879d60800000000000000
+      internalID: 7896936911979272719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_2
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 842
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8157200d453f9c5c0800000000000000
+      internalID: -4194554032326281960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_3
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 842
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1204200afe0e270800000000000000
+      internalID: 8277879585618534816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_4
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 842
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37bc6b6875c0e77a0800000000000000
+      internalID: -6377646452248229005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_5
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 842
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de29a4b004096c00800000000000000
+      internalID: 894250402087251673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_6
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 742
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29a316db435a7e50800000000000000
+      internalID: 6807845371903191339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_7
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 742
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52089a0aa85a7d80800000000000000
+      internalID: -8252185879857593762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_8
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 742
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e197de9005490a50800000000000000
+      internalID: 6487792607171154406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_9
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 742
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250fd7001b34e9850800000000000000
+      internalID: 6385615749154467922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_10
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 742
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4deb7e51c6c2b2250800000000000000
+      internalID: 5920874977844248276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_11
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 742
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7bb14c48869217d0800000000000000
+      internalID: -2949129293835158658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_12
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 742
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b30b4e6dac98f200800000000000000
+      internalID: 214093250993783728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_13
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 742
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aec6581773233da0800000000000000
+      internalID: -5966386086919352668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_14
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 642
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83bcd59577bfc6f80800000000000000
+      internalID: -8111832338782106824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_15
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 642
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60faeb719274c0160800000000000000
+      internalID: 6993042563217141510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_16
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 642
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2d8438930ba6be0800000000000000
+      internalID: -1483179366202944828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_17
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 642
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a465a6fc19b916b0800000000000000
+      internalID: -5325021550340643671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_18
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 642
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3090725aba825db0800000000000000
+      internalID: -4804625319599239110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_19
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 642
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7200610c96e50c50800000000000000
+      internalID: 6630959584085279354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_20
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 642
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d824e2b040963dfc0800000000000000
+      internalID: -3471315421684153715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_21
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 642
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda1a270827188660800000000000000
+      internalID: 7388180649387629279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_22
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 542
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ba49c38dfdb2980800000000000000
+      internalID: -8562504146692560016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_23
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 542
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67579488dcf745a0800000000000000
+      internalID: -6536978327237339284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_24
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 542
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8674509aea9560a20800000000000000
+      internalID: 3028206406148114280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_25
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 542
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74737be22a9dc58a0800000000000000
+      internalID: -6314933286888589497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_26
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 542
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9fc58d42bd6b4500800000000000000
+      internalID: 381519206015160221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_27
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 542
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e69570eaf6a129f0800000000000000
+      internalID: -494930887596206363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_28
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 542
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f052b8a6f4e7690800000000000000
+      internalID: -7602551801935229060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_29
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 442
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d32dac611c752d00800000000000000
+      internalID: 947299710910931929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_30
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 442
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11444a6dddf48b370800000000000000
+      internalID: 8338502524283929617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_31
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 442
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e4218e3e5b3cce0800000000000000
+      internalID: -1386064269844263357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_32
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 442
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7045a5399f1785e60800000000000000
+      internalID: 7951230458855576583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_33
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 442
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b64b7be0b698fafa0800000000000000
+      internalID: -5787255903246371733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_34
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 436
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfbed774aa79f2b70800000000000000
+      internalID: 8876480148170206203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_35
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 436
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efd379ac15cfb740800000000000000
+      internalID: 5170067624137318373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_36
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 436
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46049410beb0b5dc0800000000000000
+      internalID: -3649309969086857116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_37
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 342
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5847069833e6740800000000000000
+      internalID: 5147108089252840916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_38
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 341
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c169db206d8e9f0800000000000000
+      internalID: -438865656409613289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_39
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 336
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c082cc47fc8595b30800000000000000
+      internalID: 4276546969206007820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_40
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 342
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0005b22ec00b05be0800000000000000
+      internalID: -1490497907279048704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_41
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 342
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d83e3c365ee86860800000000000000
+      internalID: 7523525231667722456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_42
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 342
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8665f6f28681f5c0800000000000000
+      internalID: -4183414681803331955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_43
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 342
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1697c826d299d4f30800000000000000
+      internalID: 4561470417802131809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_44
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 336
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc207ab76cc95410800000000000000
+      internalID: 1466427899567418547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_45
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 336
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baaa90c317ae6b760800000000000000
+      internalID: 7473418403727387307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_46
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 336
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ccb126265b1eff0800000000000000
+      internalID: -8526290120618983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_47
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 336
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df31ae487ee96230800000000000000
+      internalID: 3632696774933692377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_48
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 242
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b3f8e36200c48b0800000000000000
+      internalID: -5166754508242470040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_49
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 242
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9e10edbdbeb68c0800000000000000
+      internalID: -4004848114060891686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_50
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 242
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b11bbfa7e9049e0800000000000000
+      internalID: -1639136013316973740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_51
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 242
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c374331a1476225a0800000000000000
+      internalID: -6547557376668252356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_52
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 142
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a13298d7d1cf3e90800000000000000
+      internalID: -7043698159388577373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_53
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 142
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6dfe310c6f73990800000000000000
+      internalID: -7406179757358852369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_54
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 142
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495f78c69f2775800800000000000000
+      internalID: 601075490870523284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_55
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 142
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a2b141dc9cadb20800000000000000
+      internalID: 3160059971196627576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_56
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 42
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc6bd03eb3a6f1a0800000000000000
+      internalID: -6776048552073532198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_57
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 41
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783868c28643e20d0800000000000000
+      internalID: -3445759042863594617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_58
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 42
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2afb9b6825d8ff10800000000000000
+      internalID: 2303825578980801067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knight Templar_59
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 42
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f8b3825df939d70800000000000000
+      internalID: 9048751814169300876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Knight Templar_0: 868370677313445676
+      Knight Templar_1: 7896936911979272719
+      Knight Templar_10: 5920874977844248276
+      Knight Templar_11: -2949129293835158658
+      Knight Templar_12: 214093250993783728
+      Knight Templar_13: -5966386086919352668
+      Knight Templar_14: -8111832338782106824
+      Knight Templar_15: 6993042563217141510
+      Knight Templar_16: -1483179366202944828
+      Knight Templar_17: -5325021550340643671
+      Knight Templar_18: -4804625319599239110
+      Knight Templar_19: 6630959584085279354
+      Knight Templar_2: -4194554032326281960
+      Knight Templar_20: -3471315421684153715
+      Knight Templar_21: 7388180649387629279
+      Knight Templar_22: -8562504146692560016
+      Knight Templar_23: -6536978327237339284
+      Knight Templar_24: 3028206406148114280
+      Knight Templar_25: -6314933286888589497
+      Knight Templar_26: 381519206015160221
+      Knight Templar_27: -494930887596206363
+      Knight Templar_28: -7602551801935229060
+      Knight Templar_29: 947299710910931929
+      Knight Templar_3: 8277879585618534816
+      Knight Templar_30: 8338502524283929617
+      Knight Templar_31: -1386064269844263357
+      Knight Templar_32: 7951230458855576583
+      Knight Templar_33: -5787255903246371733
+      Knight Templar_34: 8876480148170206203
+      Knight Templar_35: 5170067624137318373
+      Knight Templar_36: -3649309969086857116
+      Knight Templar_37: 5147108089252840916
+      Knight Templar_38: -438865656409613289
+      Knight Templar_39: 4276546969206007820
+      Knight Templar_4: -6377646452248229005
+      Knight Templar_40: -1490497907279048704
+      Knight Templar_41: 7523525231667722456
+      Knight Templar_42: -4183414681803331955
+      Knight Templar_43: 4561470417802131809
+      Knight Templar_44: 1466427899567418547
+      Knight Templar_45: 7473418403727387307
+      Knight Templar_46: -8526290120618983
+      Knight Templar_47: 3632696774933692377
+      Knight Templar_48: -5166754508242470040
+      Knight Templar_49: -4004848114060891686
+      Knight Templar_5: 894250402087251673
+      Knight Templar_50: -1639136013316973740
+      Knight Templar_51: -6547557376668252356
+      Knight Templar_52: -7043698159388577373
+      Knight Templar_53: -7406179757358852369
+      Knight Templar_54: 601075490870523284
+      Knight Templar_55: 3160059971196627576
+      Knight Templar_56: -6776048552073532198
+      Knight Templar_57: -3445759042863594617
+      Knight Templar_58: 2303825578980801067
+      Knight Templar_59: 9048751814169300876
+      Knight Templar_6: 6807845371903191339
+      Knight Templar_7: -8252185879857593762
+      Knight Templar_8: 6487792607171154406
+      Knight Templar_9: 6385615749154467922
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

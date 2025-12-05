@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 4225cfc847fafa3408cceef8a7d258a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7764543302589567303
+    second: Werebear-Attack02_0
+  - first:
+      213: 6615189886518209812
+    second: Werebear-Attack02_1
+  - first:
+      213: -717056855885318534
+    second: Werebear-Attack02_2
+  - first:
+      213: -6403454309857681382
+    second: Werebear-Attack02_3
+  - first:
+      213: -7700665541728941658
+    second: Werebear-Attack02_4
+  - first:
+      213: 2901253553737633288
+    second: Werebear-Attack02_5
+  - first:
+      213: -514884274419843581
+    second: Werebear-Attack02_6
+  - first:
+      213: 1186257174942252440
+    second: Werebear-Attack02_7
+  - first:
+      213: 6772524254636194099
+    second: Werebear-Attack02_8
+  - first:
+      213: 8349295859296516536
+    second: Werebear-Attack02_9
+  - first:
+      213: -6702099871805834509
+    second: Werebear-Attack02_10
+  - first:
+      213: 3270206373958072057
+    second: Werebear-Attack02_11
+  - first:
+      213: -3115815885818437991
+    second: Werebear-Attack02_12
+  - first:
+      213: 6305596292903161031
+    second: Werebear-Attack02_13
+  - first:
+      213: -9128901902707884199
+    second: Werebear-Attack02_14
+  - first:
+      213: -7066464849332993689
+    second: Werebear-Attack02_15
+  - first:
+      213: 7079662740178919219
+    second: Werebear-Attack02_16
+  - first:
+      213: -972218317596142787
+    second: Werebear-Attack02_17
+  - first:
+      213: 7597110346066124636
+    second: Werebear-Attack02_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Werebear-Attack02_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 39
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bea20e210dce3490800000000000000
+      internalID: -7764543302589567303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 39
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41dacab2720edcb50800000000000000
+      internalID: 6615189886518209812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_2
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 39
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a767235b6908c06f0800000000000000
+      internalID: -717056855885318534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_3
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 39
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a102d7d6b3c5227a0800000000000000
+      internalID: -6403454309857681382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_4
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 39
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9c72b5d7db12590800000000000000
+      internalID: -7700665541728941658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_5
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 38
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e0fd15cb2534820800000000000000
+      internalID: 2901253553737633288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_6
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 39
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e35cafa73cad8f0800000000000000
+      internalID: -514884274419843581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_7
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 38
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89df0b49d9e667010800000000000000
+      internalID: 1186257174942252440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 39
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339be4e5de6dcfd50800000000000000
+      internalID: 6772524254636194099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_9
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 39
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9320af858aed370800000000000000
+      internalID: 8349295859296516536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_10
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 39
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa72d30dab5df2a0800000000000000
+      internalID: -6702099871805834509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_11
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 34
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f63dfdee5b126d20800000000000000
+      internalID: 3270206373958072057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_12
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 37
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ed54cc5f562c4d0800000000000000
+      internalID: -3115815885818437991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_13
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 38
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc438f7b6af18750800000000000000
+      internalID: 6305596292903161031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_14
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 34
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f75b32610af4180800000000000000
+      internalID: -9128901902707884199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_15
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 35
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76109b5c8afdeed90800000000000000
+      internalID: -7066464849332993689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_16
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 37
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fdee5a0c3004260800000000000000
+      internalID: 7079662740178919219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_17
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 38
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33dd87579cf182f0800000000000000
+      internalID: -972218317596142787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Werebear-Attack02_18
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 39
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f57b8cb9b5e6960800000000000000
+      internalID: 7597110346066124636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Werebear-Attack02_0: -7764543302589567303
+      Werebear-Attack02_1: 6615189886518209812
+      Werebear-Attack02_10: -6702099871805834509
+      Werebear-Attack02_11: 3270206373958072057
+      Werebear-Attack02_12: -3115815885818437991
+      Werebear-Attack02_13: 6305596292903161031
+      Werebear-Attack02_14: -9128901902707884199
+      Werebear-Attack02_15: -7066464849332993689
+      Werebear-Attack02_16: 7079662740178919219
+      Werebear-Attack02_17: -972218317596142787
+      Werebear-Attack02_18: 7597110346066124636
+      Werebear-Attack02_2: -717056855885318534
+      Werebear-Attack02_3: -6403454309857681382
+      Werebear-Attack02_4: -7700665541728941658
+      Werebear-Attack02_5: 2901253553737633288
+      Werebear-Attack02_6: -514884274419843581
+      Werebear-Attack02_7: 1186257174942252440
+      Werebear-Attack02_8: 6772524254636194099
+      Werebear-Attack02_9: 8349295859296516536
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

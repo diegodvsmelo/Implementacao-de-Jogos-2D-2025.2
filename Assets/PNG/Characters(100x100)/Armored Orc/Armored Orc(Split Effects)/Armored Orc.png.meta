@@ -1,0 +1,1469 @@
+fileFormatVersion: 2
+guid: 6ef6778ed648953429b19edc76efb553
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2912446813672376553
+    second: Armored Orc_0
+  - first:
+      213: -8778042431774643591
+    second: Armored Orc_1
+  - first:
+      213: -6693778135612280349
+    second: Armored Orc_2
+  - first:
+      213: 7653702948463172448
+    second: Armored Orc_3
+  - first:
+      213: 6408001850665208496
+    second: Armored Orc_4
+  - first:
+      213: 1657039436677634998
+    second: Armored Orc_5
+  - first:
+      213: 2466155953838537221
+    second: Armored Orc_6
+  - first:
+      213: -3303280928630781057
+    second: Armored Orc_7
+  - first:
+      213: 2484243374060446236
+    second: Armored Orc_8
+  - first:
+      213: -9099021868739390362
+    second: Armored Orc_9
+  - first:
+      213: 898657756863966010
+    second: Armored Orc_10
+  - first:
+      213: 3998507587989589137
+    second: Armored Orc_11
+  - first:
+      213: 2080086109989568798
+    second: Armored Orc_12
+  - first:
+      213: -2681162981481111067
+    second: Armored Orc_13
+  - first:
+      213: 3972752693279621484
+    second: Armored Orc_14
+  - first:
+      213: -2143692031311750546
+    second: Armored Orc_15
+  - first:
+      213: 1243918684929378971
+    second: Armored Orc_16
+  - first:
+      213: -4115501079709931805
+    second: Armored Orc_17
+  - first:
+      213: 5274218527465150696
+    second: Armored Orc_18
+  - first:
+      213: 253506278420848096
+    second: Armored Orc_19
+  - first:
+      213: -5380246857073663680
+    second: Armored Orc_20
+  - first:
+      213: 833062447513864960
+    second: Armored Orc_21
+  - first:
+      213: -2333657434383744597
+    second: Armored Orc_22
+  - first:
+      213: 594655370500473545
+    second: Armored Orc_23
+  - first:
+      213: -336328789244761603
+    second: Armored Orc_24
+  - first:
+      213: -6384400582011332961
+    second: Armored Orc_25
+  - first:
+      213: -638935760870513699
+    second: Armored Orc_26
+  - first:
+      213: -4179029329606092885
+    second: Armored Orc_27
+  - first:
+      213: -4685616090904933158
+    second: Armored Orc_28
+  - first:
+      213: 947865594081411078
+    second: Armored Orc_29
+  - first:
+      213: 4066000540678228804
+    second: Armored Orc_30
+  - first:
+      213: -3625504057151778581
+    second: Armored Orc_31
+  - first:
+      213: -5132270236001151347
+    second: Armored Orc_32
+  - first:
+      213: -8047159624524783739
+    second: Armored Orc_33
+  - first:
+      213: -6545702574377034504
+    second: Armored Orc_34
+  - first:
+      213: -2894470003046333343
+    second: Armored Orc_35
+  - first:
+      213: -8225371029816201316
+    second: Armored Orc_36
+  - first:
+      213: 3545450678209655214
+    second: Armored Orc_37
+  - first:
+      213: -7453895929994222792
+    second: Armored Orc_38
+  - first:
+      213: 945090177529225280
+    second: Armored Orc_39
+  - first:
+      213: -8635277944891657230
+    second: Armored Orc_40
+  - first:
+      213: 6624459492065333254
+    second: Armored Orc_41
+  - first:
+      213: 942021624129291470
+    second: Armored Orc_42
+  - first:
+      213: 7302823283300392366
+    second: Armored Orc_43
+  - first:
+      213: 2235164628862200677
+    second: Armored Orc_44
+  - first:
+      213: 4776675721523677984
+    second: Armored Orc_45
+  - first:
+      213: 6507381300114145974
+    second: Armored Orc_46
+  - first:
+      213: 8708037471508333224
+    second: Armored Orc_47
+  - first:
+      213: -7062038175086207021
+    second: Armored Orc_48
+  - first:
+      213: 1994335691366703331
+    second: Armored Orc_49
+  - first:
+      213: -3781227438890538370
+    second: Armored Orc_50
+  - first:
+      213: -3007716475453005780
+    second: Armored Orc_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Armored Orc_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 742
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8092c32f61b6820800000000000000
+      internalID: 2912446813672376553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 742
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a24c69ae02e2680800000000000000
+      internalID: -8778042431774643591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_2
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 742
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1bd85304cea13a0800000000000000
+      internalID: -6693778135612280349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_3
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 742
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06bd183d74a673a60800000000000000
+      internalID: 7653702948463172448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_4
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 742
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba02fc6bbbcde850800000000000000
+      internalID: 6408001850665208496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_5
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 742
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbdbf9969cfef610800000000000000
+      internalID: 1657039436677634998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_6
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 642
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ab24516cb893220800000000000000
+      internalID: 2466155953838537221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_7
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 643
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7bc3a73f736822d0800000000000000
+      internalID: -3303280928630781057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_8
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 642
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12ad76cf2ec97220800000000000000
+      internalID: 2484243374060446236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_9
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 641
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664174ea1d7c9b180800000000000000
+      internalID: -9099021868739390362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_10
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 642
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ba684f77ca87c00800000000000000
+      internalID: 898657756863966010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_11
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 643
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19cc2dd577d8d7730800000000000000
+      internalID: 3998507587989589137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_12
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 642
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e110728db43fddc10800000000000000
+      internalID: 2080086109989568798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_13
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 641
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e124e749789acad0800000000000000
+      internalID: -2681162981481111067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 542
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c618867a68d022730800000000000000
+      internalID: 3972752693279621484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_15
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 542
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ad3dd84731042e0800000000000000
+      internalID: -2143692031311750546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_16
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 542
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9acfa01479434110800000000000000
+      internalID: 1243918684929378971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_17
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 542
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e62727a29dc2e6c0800000000000000
+      internalID: -4115501079709931805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_18
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 537
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e818558ec9c13940800000000000000
+      internalID: 5274218527465150696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_19
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 537
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed1b99fd92a48300800000000000000
+      internalID: 253506278420848096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 537
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04166304df58555b0800000000000000
+      internalID: -5380246857073663680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_21
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 442
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b08cbd1e1af8b00800000000000000
+      internalID: 833062447513864960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_22
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 442
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba18b1c7dee2d9fd0800000000000000
+      internalID: -2333657434383744597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_23
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 442
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2857aa8e3a04800800000000000000
+      internalID: 594655370500473545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_24
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 442
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df924558fbe155bf0800000000000000
+      internalID: -336328789244761603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_25
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 442
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96da652f7d0667a0800000000000000
+      internalID: -6384400582011332961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_26
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 442
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3e40b8f4b0227f0800000000000000
+      internalID: -638935760870513699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 442
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7d3e657fa1106c0800000000000000
+      internalID: -4179029329606092885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_28
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 442
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcc1c3adf859feb0800000000000000
+      internalID: -4685616090904933158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_29
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 342
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600890e5cbe772d00800000000000000
+      internalID: 947865594081411078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_30
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 342
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b0cabf2f55d6830800000000000000
+      internalID: 4066000540678228804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_31
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 342
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be01bbdc44f9fadc0800000000000000
+      internalID: -3625504057151778581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_32
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 342
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8657db896386c8b0800000000000000
+      internalID: -5132270236001151347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_33
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 342
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f955905feb25090800000000000000
+      internalID: -8047159624524783739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_34
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 342
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc95e0703ef825a0800000000000000
+      internalID: -6545702574377034504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_35
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 342
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16446672ed6c4d7d0800000000000000
+      internalID: -2894470003046333343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_36
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 342
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f2406d0ac99dd80800000000000000
+      internalID: -8225371029816201316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_37
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 342
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1ba537b98f33130800000000000000
+      internalID: 3545450678209655214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_38
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 242
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833e6f3e4217e8890800000000000000
+      internalID: -7453895929994222792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_39
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 242
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04027585282ad1d00800000000000000
+      internalID: 945090177529225280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_40
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 242
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3b7f5f574592880800000000000000
+      internalID: -8635277944891657230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_41
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 242
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600d4856fceceeb50800000000000000
+      internalID: 6624459492065333254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_42
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 142
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec486f41dabb21d00800000000000000
+      internalID: 942021624129291470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_43
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 142
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead529a8517d85560800000000000000
+      internalID: 7302823283300392366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_44
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 142
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b69d53366e40f10800000000000000
+      internalID: 2235164628862200677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_45
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 142
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02bc6a4c2492a4240800000000000000
+      internalID: 4776675721523677984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_46
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 42
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2c25b90dcde4a50800000000000000
+      internalID: 6507381300114145974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_47
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 43
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a28b0471f929d870800000000000000
+      internalID: 8708037471508333224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_48
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 47
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df1dbf22b99efd90800000000000000
+      internalID: -7062038175086207021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_49
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 44
+        width: 42
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0abceaebd4dab10800000000000000
+      internalID: 1994335691366703331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_50
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 42
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a28f99da1668bc0800000000000000
+      internalID: -3781227438890538370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Orc_51
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 42
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20a8871dc17246d0800000000000000
+      internalID: -3007716475453005780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Armored Orc_0: 2912446813672376553
+      Armored Orc_1: -8778042431774643591
+      Armored Orc_10: 898657756863966010
+      Armored Orc_11: 3998507587989589137
+      Armored Orc_12: 2080086109989568798
+      Armored Orc_13: -2681162981481111067
+      Armored Orc_14: 3972752693279621484
+      Armored Orc_15: -2143692031311750546
+      Armored Orc_16: 1243918684929378971
+      Armored Orc_17: -4115501079709931805
+      Armored Orc_18: 5274218527465150696
+      Armored Orc_19: 253506278420848096
+      Armored Orc_2: -6693778135612280349
+      Armored Orc_20: -5380246857073663680
+      Armored Orc_21: 833062447513864960
+      Armored Orc_22: -2333657434383744597
+      Armored Orc_23: 594655370500473545
+      Armored Orc_24: -336328789244761603
+      Armored Orc_25: -6384400582011332961
+      Armored Orc_26: -638935760870513699
+      Armored Orc_27: -4179029329606092885
+      Armored Orc_28: -4685616090904933158
+      Armored Orc_29: 947865594081411078
+      Armored Orc_3: 7653702948463172448
+      Armored Orc_30: 4066000540678228804
+      Armored Orc_31: -3625504057151778581
+      Armored Orc_32: -5132270236001151347
+      Armored Orc_33: -8047159624524783739
+      Armored Orc_34: -6545702574377034504
+      Armored Orc_35: -2894470003046333343
+      Armored Orc_36: -8225371029816201316
+      Armored Orc_37: 3545450678209655214
+      Armored Orc_38: -7453895929994222792
+      Armored Orc_39: 945090177529225280
+      Armored Orc_4: 6408001850665208496
+      Armored Orc_40: -8635277944891657230
+      Armored Orc_41: 6624459492065333254
+      Armored Orc_42: 942021624129291470
+      Armored Orc_43: 7302823283300392366
+      Armored Orc_44: 2235164628862200677
+      Armored Orc_45: 4776675721523677984
+      Armored Orc_46: 6507381300114145974
+      Armored Orc_47: 8708037471508333224
+      Armored Orc_48: -7062038175086207021
+      Armored Orc_49: 1994335691366703331
+      Armored Orc_5: 1657039436677634998
+      Armored Orc_50: -3781227438890538370
+      Armored Orc_51: -3007716475453005780
+      Armored Orc_6: 2466155953838537221
+      Armored Orc_7: -3303280928630781057
+      Armored Orc_8: 2484243374060446236
+      Armored Orc_9: -9099021868739390362
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
