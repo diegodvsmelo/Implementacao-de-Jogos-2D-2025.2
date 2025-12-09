@@ -14,7 +14,11 @@ public class PlayerHealth : MonoBehaviour
     // --- CONFIGURAÇÕES DE IMPACTO ---
     [Header("Efeitos Visuais")]
     public Material flashMaterial; 
-    private Material originalMaterial; 
+    private Material originalMaterial;
+    public GameObject deathDimmer;
+    public int dimmerLayer = 50;
+    public int playerDeathLayer = 51;
+    public float deathTimeScale = 0.2f;
 
     [Tooltip("Tempo congelado (Hit Stop)")]
     public float hitStopDuration = 0.15f; 
@@ -33,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
     {
         stats = GetComponent<PlayerStats>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>(); 
         originalMaterial = spriteRenderer.material;
     }
 
@@ -45,11 +50,18 @@ public class PlayerHealth : MonoBehaviour
             healthBar.SetHealth(stats.currentHealth);
         }
     }
-
+    
     public void TakeDamage(int damage)
     {
         if (isInvulnerable) return;
 
+        stats.currentHealth -= damage;
+        
+        if (stats.currentHealth > 0 && animator != null)
+        {
+            animator.SetTrigger("Hurt");
+        }
+        
         if (stats != null)
         {
             stats.ModifyHealth(-damage);
@@ -60,7 +72,7 @@ public class PlayerHealth : MonoBehaviour
             PlayerDeath();
             return;
         }
-
+        
         //Efeitos de Impacto
         StartCoroutine(HitStopRoutine());
         StartCoroutine(InvulnerabilityRoutine());
@@ -122,11 +134,49 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    // Adicione essa variável no topo
+    private Animator animator;
+    
     public void PlayerDeath()
     {
+        if(animator != null)
+        {
+            animator.SetTrigger("Die");
+            animator.speed = 1f / deathTimeScale; 
+        }
+        
+        Time.timeScale = deathTimeScale; 
+
+        // Efeito Visual (Escurecer tudo menos a bruxa)
+        if(deathDimmer != null)
+        {
+            deathDimmer.SetActive(true);
+            
+            SpriteRenderer dimmerRenderer = deathDimmer.GetComponent<SpriteRenderer>();
+            if(dimmerRenderer != null) dimmerRenderer.sortingOrder = dimmerLayer;
+            
+            spriteRenderer.sortingOrder = playerDeathLayer;
+            
+            Transform shadow = transform.Find("Shadow");
+            if(shadow != null) 
+            {
+                shadow.gameObject.SetActive(false); 
+            }
+        }
+        
+        GetComponent<PlayerMovement>().enabled = false;
+        GetComponent<Collider2D>().enabled = false; 
+        
+        StartCoroutine(ShowGameOverDelay());
+    }
+
+    private IEnumerator ShowGameOverDelay()
+    {
+        yield return new WaitForSecondsRealtime(2.0f);
+
         gameOverScreen.SetActive(true);
         Time.timeScale = 0;
-        Destroy(gameObject);
+        animator.speed = 0;
     }
     
     void OnDrawGizmosSelected()
