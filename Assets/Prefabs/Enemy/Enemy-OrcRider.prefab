@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5389288998246214776}
   - component: {fileID: 8314955958793737982}
   - component: {fileID: 5256194585778713962}
+  - component: {fileID: 5564177862511084092}
   m_Layer: 9
   m_Name: Enemy-OrcRider
   m_TagString: Enemy
@@ -221,3 +222,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 0
   currentHealth: 0
+--- !u!114 &5564177862511084092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835495513308341176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6dae7283febca546bb624f106f30274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyVisualFeedback
+  damageNumberPrefab: {fileID: 756115852148387545, guid: 709e156623ee07e49891ee9ece418a05, type: 3}
+  damageNumberOffset: {x: 0, y: 0.5, z: 0}
+  useFlashEffect: 1
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.2
+  useShakeEffect: 0
+  shakeMagnitude: 0.1
+  shakeDuration: 0.1
+  useKnockback: 0
+  knockbackForce: 0

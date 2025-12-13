@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 638229694325602789}
   - component: {fileID: 6582701510504112821}
   - component: {fileID: 5815710604893067936}
+  - component: {fileID: 8466866060850266356}
   m_Layer: 9
   m_Name: Enemy-Orc
   m_TagString: Enemy
@@ -182,7 +183,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.24, y: 0.17}
+    oldSize: {x: 1.5, y: 1.0625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -221,3 +222,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 0
   currentHealth: 0
+--- !u!114 &8466866060850266356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8837945472609669241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6dae7283febca546bb624f106f30274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyVisualFeedback
+  damageNumberPrefab: {fileID: 756115852148387545, guid: 709e156623ee07e49891ee9ece418a05, type: 3}
+  damageNumberOffset: {x: 0, y: 0.5, z: 0}
+  useFlashEffect: 1
+  flashColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  flashDuration: 0.2
+  useShakeEffect: 0
+  shakeMagnitude: 0.1
+  shakeDuration: 0.1
+  useKnockback: 0
+  knockbackForce: 0

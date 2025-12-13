@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1396aaab88e88f4489cf219e7bc853f2
+guid: 092dfaf1a79e49e4584451b3f1cc5558
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Alagard
+  - m5x7
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
