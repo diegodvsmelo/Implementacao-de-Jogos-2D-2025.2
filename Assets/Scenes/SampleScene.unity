@@ -2723,9 +2723,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756c627ba32d1f442bea6f62c7b55c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillQueueManager
-  startingSkill: {fileID: 11400000, guid: 7fe8d4905cd2b79479932b5a58665b5a, type: 2}
+  startingSkill: {fileID: 11400000, guid: b2c1c590e24082f408839e794491ef57, type: 2}
   activeSlots:
-  - data: {fileID: 0}
+  - data: {fileID: 11400000, guid: b2c1c590e24082f408839e794491ef57, type: 2}
     currentCharges: 0
     lastUsedTime: 0
   - data: {fileID: 0}
