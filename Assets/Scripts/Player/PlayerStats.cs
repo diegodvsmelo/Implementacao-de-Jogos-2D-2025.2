@@ -16,6 +16,8 @@ public class PlayerStats : MonoBehaviour
     [Header("Atributos de Combate")]
     public float globalDamageMultiplier;
     public float cooldownReductionMultiplier;
+    public int criticalChance;
+    public float criticalMultiplier;
 
     [Header("Estado de Buffs")]
     public bool isShielded = false;
@@ -134,6 +136,6 @@ public class PlayerStats : MonoBehaviour
     public void UpgradeCooldown(float percentage)
     {
         cooldownReductionMultiplier -= percentage;
-        Debug.Log("Dano Multiplicado! Novo: " + cooldownReductionMultiplier);
+        Debug.Log("Cooldown reduzido! Novo: " + cooldownReductionMultiplier);
     }
 }

@@ -237,10 +237,9 @@ MonoBehaviour:
   damageNumberPrefab: {fileID: 756115852148387545, guid: 709e156623ee07e49891ee9ece418a05, type: 3}
   damageNumberOffset: {x: 0, y: 0.5, z: 0}
   useFlashEffect: 1
-  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  criticalFlashColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.2
-  useShakeEffect: 0
+  useShakeEffect: 1
   shakeMagnitude: 0.1
   shakeDuration: 0.1
-  useKnockback: 0
-  knockbackForce: 0

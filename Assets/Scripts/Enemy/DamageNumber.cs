@@ -1,18 +1,19 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class DamageNumber : MonoBehaviour
 {
     [Header("Configurações de Movimento")]
     [SerializeField] private float moveSpeed = 2f;
     [SerializeField] private float lifetime = 1f;
-    
+
     [Header("Configurações Visuais")]
     [SerializeField] private AnimationCurve scaleCurve = AnimationCurve.EaseInOut(0, 1, 1, 0.5f);
     [SerializeField] private Vector2 randomDirection = new Vector2(0.3f, 0.3f);
-    
+    [SerializeField] private Color simpleColor;
+    [SerializeField] private Color criticalColor;
+
     private TextMeshPro textMesh;
-    private Color startColor;
     private Vector3 moveDirection;
     private float timer;
     
@@ -21,21 +22,22 @@ public class DamageNumber : MonoBehaviour
         textMesh = GetComponent<TextMeshPro>();
         if (textMesh != null)
         {
-            startColor = textMesh.color;
+            simpleColor = textMesh.color;
         }
     }
     
-    public void Initialize(int damage, Color? color = null)
+    public void Initialize(int damage, bool isCritical)
     {
         if (textMesh == null)
             textMesh = GetComponent<TextMeshPro>();
             
         textMesh.text = damage.ToString();
-        
-        if (color.HasValue)
+
+        if (isCritical)
         {
-            textMesh.color = color.Value;
-            startColor = color.Value;
+            textMesh.color = criticalColor;
+        } else {
+            textMesh.color = simpleColor;
         }
         
         // Adiciona uma direção aleatória para o movimento
@@ -61,7 +63,7 @@ public class DamageNumber : MonoBehaviour
         if (timer > lifetime * 0.5f)
         {
             Color newColor = textMesh.color;
-            newColor.a = Mathf.Lerp(startColor.a, 0f, (timer - lifetime * 0.5f) / (lifetime * 0.5f));
+            newColor.a = Mathf.Lerp(simpleColor.a, 0f, (timer - lifetime * 0.5f) / (lifetime * 0.5f));
             textMesh.color = newColor;
         }
         

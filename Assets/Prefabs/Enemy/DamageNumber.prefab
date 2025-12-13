@@ -82,8 +82,8 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1396091225
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5729209485217071281
@@ -219,3 +219,5 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   randomDirection: {x: 0.3, y: 0.3}
+  simpleColor: {r: 0, g: 0, b: 0, a: 0}
+  criticalColor: {r: 1, g: 0, b: 0, a: 1}
