@@ -16,10 +16,10 @@ MonoBehaviour:
   description: Increases the player's maximum health by 5%.
   icon: {fileID: 6726084321763117244, guid: 75c630bb4462de64388bba076d697a6f, type: 3}
   upgradeType: 0
-  value: 1
+  value: 50
   isPercentage: 1
   maxLevel: 5
   rarity: 2
   minimumPlayerLevel: 1
   requiredUpgrades: []
-  currentLevel: 0
+  currentLevel: 1

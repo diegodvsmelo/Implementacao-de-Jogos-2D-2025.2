@@ -5,16 +5,16 @@ using System.Linq;
 public class UpgradeManagerStats : MonoBehaviour
 {
     [Header("Configurações")]
-    [SerializeField] private UpgradeData[] allUpgrades; // Todos os 15 upgrades
-    [SerializeField] private int upgradesPerLevel = 4; // Quantos mostrar por vez
+    [SerializeField] private UpgradeData[] allUpgrades; 
+    [SerializeField] private int upgradesPerLevel = 4; 
     
     [Header("UI")]
-    [SerializeField] private GameObject upgradePanel; // Painel que aparece ao upar
-    [SerializeField] private UpgradeOption[] upgradeOptions; // 4 slots de UI
+    [SerializeField] private GameObject upgradePanel; 
+    [SerializeField] private UpgradeOption[] upgradeOptions; 
     
     [Header("Balanceamento")]
-    [SerializeField] private bool allowDuplicates = false; // Pode aparecer o mesmo upgrade 2x?
-    [SerializeField] private bool useRarityWeight = true; // Usa raridade para peso?
+    [SerializeField] private bool allowDuplicates = false; 
+    [SerializeField] private bool useRarityWeight = true; 
     
     private List<UpgradeData> currentUpgradeSelection = new List<UpgradeData>();
     private int currentPlayerLevel = 1;
@@ -35,13 +35,11 @@ public class UpgradeManagerStats : MonoBehaviour
     
     private void Start()
     {
-        // Esconde o painel no início
         if (upgradePanel != null)
         {
             upgradePanel.SetActive(false);
         }
         
-        // Reseta todos os upgrades
         ResetAllUpgrades();
     }
     
@@ -53,24 +51,20 @@ public class UpgradeManagerStats : MonoBehaviour
     
     public void ShowUpgradeOptions()
     {
-        // Gera 4 upgrades aleatórios
         currentUpgradeSelection = SelectRandomUpgrades(upgradesPerLevel);
         
-        // Se não conseguiu 4 upgrades, algo está errado
         if (currentUpgradeSelection.Count == 0)
         {
             Debug.LogWarning("Nenhum upgrade disponível!");
             return;
         }
         
-        // Mostra o painel
         if (upgradePanel != null)
         {
             upgradePanel.SetActive(true);
-            Time.timeScale = 0f; // Pausa o jogo
+            Time.timeScale = 0f;
         }
         
-        // Atualiza a UI
         for (int i = 0; i < upgradeOptions.Length; i++)
         {
             if (i < currentUpgradeSelection.Count)
@@ -80,20 +74,15 @@ public class UpgradeManagerStats : MonoBehaviour
             }
             else
             {
-                // Se tiver menos de 4 upgrades disponíveis, esconde os slots vazios
                 upgradeOptions[i].gameObject.SetActive(false);
             }
         }
     }
     
-    /// <summary>
-    /// Seleciona X upgrades aleatórios baseado nas regras
-    /// </summary>
     private List<UpgradeData> SelectRandomUpgrades(int count)
     {
         List<UpgradeData> selected = new List<UpgradeData>();
         
-        // Filtra upgrades que podem ser oferecidos
         List<UpgradeData> availableUpgrades = allUpgrades
             .Where(u => u.CanBeOffered(currentPlayerLevel))
             .ToList();
@@ -104,9 +93,8 @@ public class UpgradeManagerStats : MonoBehaviour
             return selected;
         }
         
-        // Seleciona até 'count' upgrades
         int attempts = 0;
-        int maxAttempts = 100; // Previne loop infinito
+        int maxAttempts = 100;
         
         while (selected.Count < count && attempts < maxAttempts)
         {
@@ -121,7 +109,6 @@ public class UpgradeManagerStats : MonoBehaviour
                 randomUpgrade = availableUpgrades[Random.Range(0, availableUpgrades.Count)];
             }
             
-            // Evita duplicatas se configurado
             if (!allowDuplicates && selected.Contains(randomUpgrade))
             {
                 attempts++;
@@ -130,13 +117,11 @@ public class UpgradeManagerStats : MonoBehaviour
             
             selected.Add(randomUpgrade);
             
-            // Se não permite duplicatas, remove da lista disponível
             if (!allowDuplicates)
             {
                 availableUpgrades.Remove(randomUpgrade);
             }
             
-            // Se acabaram os upgrades disponíveis, para
             if (availableUpgrades.Count == 0)
                 break;
             
@@ -146,25 +131,16 @@ public class UpgradeManagerStats : MonoBehaviour
         return selected;
     }
     
-    /// <summary>
-    /// Seleciona um upgrade aleatório considerando raridade como peso
-    /// Upgrades mais raros têm menos chance de aparecer
-    /// </summary>
     private UpgradeData SelectWeightedRandom(List<UpgradeData> upgrades)
     {
-        // Calcula peso total (inversamente proporcional à raridade)
-        // Rarity 1 (comum) = peso 10
-        // Rarity 10 (raro) = peso 1
         float totalWeight = 0f;
         foreach (var upgrade in upgrades)
         {
-            totalWeight += 11f - upgrade.rarity; // Inverte a raridade
+            totalWeight += 11f - upgrade.rarity;
         }
         
-        // Seleciona um valor aleatório
         float randomValue = Random.Range(0f, totalWeight);
         
-        // Encontra qual upgrade foi selecionado
         float currentWeight = 0f;
         foreach (var upgrade in upgrades)
         {
@@ -175,28 +151,18 @@ public class UpgradeManagerStats : MonoBehaviour
             }
         }
         
-        // Fallback (não deveria chegar aqui)
         return upgrades[0];
     }
     
-    /// <summary>
-    /// Chame quando o player escolher um upgrade
-    /// </summary>
     public void OnUpgradeSelected(UpgradeData upgrade)
     {
-        // Incrementa o nível do upgrade
         upgrade.currentLevel++;
         
-        // Aplica o efeito do upgrade no player
         ApplyUpgrade(upgrade);
         
-        // Fecha o painel
         CloseUpgradePanel();
     }
     
-    /// <summary>
-    /// Aplica o efeito do upgrade no player
-    /// </summary>
     private void ApplyUpgrade(UpgradeData upgrade)
     {
         PlayerStats playerStats = FindFirstObjectByType<PlayerStats>();
@@ -209,7 +175,6 @@ public class UpgradeManagerStats : MonoBehaviour
         
         float valueToAdd = upgrade.value;
         
-        // Se for porcentagem, calcula baseado no valor atual
         if (upgrade.isPercentage)
         {
             // Exemplo: se dano atual é 10 e upgrade dá +20%, adiciona 2
@@ -220,7 +185,7 @@ public class UpgradeManagerStats : MonoBehaviour
         switch (upgrade.upgradeType)
         {
             case UpgradeType.MaxHealth:
-                playerStats.maxHealth += (int)valueToAdd;
+                playerStats.UpgradeHealth((int)valueToAdd); 
                 break;
             
             case UpgradeType.Damage:

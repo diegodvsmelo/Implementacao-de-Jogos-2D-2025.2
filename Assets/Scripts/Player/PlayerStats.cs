@@ -34,15 +34,25 @@ public class PlayerStats : MonoBehaviour
         playerHealthScript = GetComponent<PlayerHealth>();
         currentHealth = maxHealth;
     }
+
     void Start()
     {
+        // --- CORREÇÃO AQUI ---
+        // Se a healthBar não foi atribuída neste script, tenta pegar a do PlayerHealth
+        if (healthBar == null && playerHealthScript != null)
+        {
+            healthBar = playerHealthScript.healthBar;
+        }
+
         currentHealth = maxHealth;
+        
         if (healthBar != null)
         {
             healthBar.SetMaxHealth(maxHealth, false); 
             healthBar.SetHealth(currentHealth);       
         }
     }
+
     public void ActivateLightBuff(float duration, float speedMult, GameObject visualPrefab)
     {
         StartCoroutine(LightBuffRoutine(duration, speedMult, visualPrefab));
@@ -104,6 +114,8 @@ public class PlayerStats : MonoBehaviour
         
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
+        // Garante que temos a referência antes de atualizar
+        if(healthBar == null && playerHealthScript != null) healthBar = playerHealthScript.healthBar;
         if(healthBar != null) healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0 && playerHealthScript != null)
@@ -116,12 +128,23 @@ public class PlayerStats : MonoBehaviour
     public void UpgradeHealth(int amount)
     {
         maxHealth += amount;
-        currentHealth += amount;
+        currentHealth += amount; // Cura o valor aumentado
+
+        // --- CORREÇÃO AQUI TAMBÉM ---
+        // Garante a referência antes de usar
+        if (healthBar == null && playerHealthScript != null)
+        {
+            healthBar = playerHealthScript.healthBar;
+        }
+
         if (healthBar != null)
         {
+            // O true ou false no segundo parâmetro depende se você quer somar a vida ou não na lógica da barra
+            // Como já somamos no currentHealth acima, usei false para apenas reajustar o visual
             healthBar.SetMaxHealth(maxHealth, false); 
             healthBar.SetHealth(currentHealth);
         }
+        
         Debug.Log("Vida Aumentada! Max: " + maxHealth);
     }
 
