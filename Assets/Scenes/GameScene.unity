@@ -1969,18 +1969,6 @@ MonoBehaviour:
   playerStats: {fileID: 506964559}
   playerXp: {fileID: 506964558}
   skillManager: {fileID: 506964560}
-  btnHealth: {fileID: 67181966}
-  healthtxt: {fileID: 2084650047}
-  healthToAdd: 20
-  btnDamage: {fileID: 79153468}
-  damagetxt: {fileID: 1227113316}
-  damageToAdd: 0.1
-  btnSpeed: {fileID: 78639305}
-  speedtxt: {fileID: 15974778}
-  speedToAdd: 0.5
-  btnCooldown: {fileID: 1677353792}
-  cooldowntxt: {fileID: 710563113}
-  cooldownToAdd: 0.1
   btnUnlockFire: {fileID: 831002815}
   fireSkillData: {fileID: 11400000, guid: ad358d088726fbb4aa380d7e504ad156, type: 2}
   txtFire: {fileID: 1930783558}
@@ -2834,10 +2822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 4134209894084004608, guid: 3f344e66f2f87a24f9595b7683704454, type: 3}
   isShooting: 1
-  coolDownShoot: 1
   directionNormalized: {x: 0, y: 0}
-  attackDamage: 10
-  attackSpeed: 15
 --- !u!114 &506964557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2874,11 +2859,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9393df1006e133647aa9938af3546f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerExp
+  upgradeCanvasUI: {fileID: 0}
+  skillLearnUI: {fileID: 0}
   xpToLevelUp: 100
   currentXp: 0
   level: 1
   xpMultiplierIncrease: 1.2
   upgradeManager: {fileID: 372504794}
+  upgradeManagerStats: {fileID: 0}
 --- !u!114 &506964559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2895,8 +2883,13 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   moveSpeed: 3
-  globalDamageMultiplier: 1
+  damage: 0
+  damageMultiplier: 0
+  projectileSpeed: 0
+  attackSpeed: 0
   cooldownReductionMultiplier: 1
+  criticalChance: 0
+  criticalMultiplier: 0
   isShielded: 0
   shieldReduction: 0.8
 --- !u!114 &506964560
@@ -2911,6 +2904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756c627ba32d1f442bea6f62c7b55c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillQueueManager
+  animator: {fileID: 0}
   startingSkill: {fileID: 11400000, guid: b2c1c590e24082f408839e794491ef57, type: 2}
   activeSlots:
   - data: {fileID: 0}
@@ -4576,7 +4570,7 @@ GameObject:
   - component: {fileID: 728644978}
   - component: {fileID: 728644977}
   m_Layer: 5
-  m_Name: Icon (1)
+  m_Name: Qicon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4771,7 +4765,7 @@ GameObject:
   - component: {fileID: 746738937}
   - component: {fileID: 746738936}
   m_Layer: 5
-  m_Name: Cooldown
+  m_Name: CooldownQ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6457,7 +6451,7 @@ GameObject:
   - component: {fileID: 1052103041}
   - component: {fileID: 1052103040}
   m_Layer: 5
-  m_Name: Shading
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8745,7 +8739,7 @@ GameObject:
   - component: {fileID: 1555361973}
   - component: {fileID: 1555361972}
   m_Layer: 5
-  m_Name: Charges
+  m_Name: ChargesQ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

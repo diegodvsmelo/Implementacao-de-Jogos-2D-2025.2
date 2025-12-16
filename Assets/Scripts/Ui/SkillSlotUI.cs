@@ -8,7 +8,7 @@ public class SkillSlotUI : MonoBehaviour
     public Image skillIcon;       
     public Image cooldownOverlay; 
     public TextMeshProUGUI chargesText; 
-    public TextMeshProUGUI cooldownText; 
+    public TextMeshProUGUI cooldownText;
 
     public void UpdateSlot(SkillState state)
     {

@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "PROJETO IMPLEMENTACAO DE JOGOS 2D.slnx"
+    "dotnet.defaultSolution": "jogos2d.slnx"
 }
