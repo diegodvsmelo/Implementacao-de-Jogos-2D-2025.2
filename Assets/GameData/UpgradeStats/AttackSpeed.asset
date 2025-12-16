@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 032bbcf0b3873a54d863b2f1cb1dc69c, type: 3}
-  m_Name: teste2
+  m_Name: AttackSpeed
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: teste2
-  description: "Descri\xE7\xE3o do que o upgrade faz"
-  icon: {fileID: -6104768699585684500, guid: 8959f93e2ba6ed141bf7415f113b806b, type: 3}
-  upgradeType: 12
+  upgradeName: Attack Speed
+  description: Increases the player's firing speed by +1.
+  icon: {fileID: 7843083181360032193, guid: d4ccb3e7cff55ce4c94d59d7ad3eb751, type: 3}
+  upgradeType: 6
   value: 1
   isPercentage: 0
   maxLevel: 5
-  rarity: 1
+  rarity: 7
   minimumPlayerLevel: 1
   requiredUpgrades: []
   currentLevel: 0

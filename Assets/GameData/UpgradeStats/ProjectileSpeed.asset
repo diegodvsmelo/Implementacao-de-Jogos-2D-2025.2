@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 032bbcf0b3873a54d863b2f1cb1dc69c, type: 3}
-  m_Name: teste1
+  m_Name: ProjectileSpeed
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: teste1
-  description: "Descri\xE7\xE3o do que o upgrade faz"
-  icon: {fileID: -2723011445512986953, guid: c3c1817c0bacb104e8001862a08e40e9, type: 3}
-  upgradeType: 4
+  upgradeName: Projectile Speed
+  description: Increase projectile speed by +1
+  icon: {fileID: 1714823786935296888, guid: 9af59009116ac9147ba432d8a1f0c76c, type: 3}
+  upgradeType: 13
   value: 1
   isPercentage: 0
   maxLevel: 5
-  rarity: 1
+  rarity: 3
   minimumPlayerLevel: 1
   requiredUpgrades: []
   currentLevel: 0

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 032bbcf0b3873a54d863b2f1cb1dc69c, type: 3}
-  m_Name: MoveSpeed
+  m_Name: ExpGain
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Movement speed
-  description: Increases the player's movement speed by 5%.
-  icon: {fileID: 3253669799693058883, guid: 331eaeaa078791b44b8befd04ece18a0, type: 3}
-  upgradeType: 2
+  upgradeName: 'Exp gain '
+  description: Increases the amount of experience received by 10%
+  icon: {fileID: 3914539744300333958, guid: 2cf3353d0d76bf44587800b11afb118d, type: 3}
+  upgradeType: 10
   value: 1
-  isPercentage: 1
+  isPercentage: 0
   maxLevel: 5
-  rarity: 1
+  rarity: 9
   minimumPlayerLevel: 1
   requiredUpgrades: []
   currentLevel: 0

@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 032bbcf0b3873a54d863b2f1cb1dc69c, type: 3}
-  m_Name: teste3
+  m_Name: HealthRegen
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: teste3
-  description: "Descri\xE7\xE3o do que o upgrade faz"
-  icon: {fileID: 1130412772418848156, guid: 3b361c93e30717c48a79c9488103d86f, type: 3}
-  upgradeType: 15
+  upgradeName: Health Regen
+  description: Regenerates the player's health at a rate of 2/s.
+  icon: {fileID: 4432749305548445602, guid: 3b361c93e30717c48a79c9488103d86f, type: 3}
+  upgradeType: 1
   value: 1
   isPercentage: 0
   maxLevel: 5
-  rarity: 1
+  rarity: 10
   minimumPlayerLevel: 1
   requiredUpgrades: []
   currentLevel: 0

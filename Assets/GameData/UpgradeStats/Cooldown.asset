@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 032bbcf0b3873a54d863b2f1cb1dc69c, type: 3}
   m_Name: Cooldown
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Cooldown -10%
-  description: Diminui o cooldown das habilidades em 10%.
+  upgradeName: Cooldown
+  description: Reduces skill cooldowns by 10%.
   icon: {fileID: -5116654496868589680, guid: 4a9f762177c27d74cb2779c2832a3429, type: 3}
   upgradeType: 11
   value: 1
   isPercentage: 1
   maxLevel: 5
-  rarity: 1
+  rarity: 3
   minimumPlayerLevel: 1
   requiredUpgrades: []
   currentLevel: 0

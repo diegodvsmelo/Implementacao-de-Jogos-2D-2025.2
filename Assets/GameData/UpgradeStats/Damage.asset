@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 032bbcf0b3873a54d863b2f1cb1dc69c, type: 3}
   m_Name: Damage
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Dano +10%
-  description: Aumenta o dano de ataques e habilidades do jogador em 10%
+  upgradeName: Damage
+  description: Increases the damage of the player's attacks and abilities by 10%.
   icon: {fileID: -7126806317532677096, guid: e0a73ed65239af4469ca08c1e268bb47, type: 3}
   upgradeType: 3
   value: 1
   isPercentage: 1
   maxLevel: 5
-  rarity: 1
+  rarity: 6
   minimumPlayerLevel: 1
   requiredUpgrades: []
   currentLevel: 0

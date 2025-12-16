@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 032bbcf0b3873a54d863b2f1cb1dc69c, type: 3}
   m_Name: MaxHealth
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  upgradeName: Vida Maxima +5%
-  description: "Aumenta a vida m\xE1xima do jogador em 5%"
+  upgradeName: Maximum Life
+  description: Increases the player's maximum health by 5%.
   icon: {fileID: 6726084321763117244, guid: 75c630bb4462de64388bba076d697a6f, type: 3}
   upgradeType: 0
   value: 1
   isPercentage: 1
   maxLevel: 5
-  rarity: 1
+  rarity: 2
   minimumPlayerLevel: 1
   requiredUpgrades: []
   currentLevel: 0
