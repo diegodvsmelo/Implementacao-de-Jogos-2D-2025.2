@@ -14,49 +14,57 @@ public class EnemyAI : MonoBehaviour
     private bool isKnockedBack = false;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+
     public void Initialize(EnemyData data, float statMultiplier)
     {
-        this.moveSpeed = data.moveSpeed* statMultiplier;
-        this.damage = (int)(data.damage*statMultiplier);
-        this.exp = (float)(data.exp*statMultiplier);
+        this.moveSpeed = data.moveSpeed * statMultiplier;
+        this.damage = (int)(data.damage * statMultiplier);
+        this.exp = (float)(data.exp * statMultiplier);
     }
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
+
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        target = player.transform;
-
-        //adicionando o inimigo no array de inimigos no mapa para definir qual inimigo será alvo do player
-        
+        if (player != null)
+        {
+            target = player.transform;
+        }
     }
+
     void OnEnable()
     {
-        EnemyManager.allEnemies.Add(this);
+        if (EnemyManager.Instance != null)
+        {
+            EnemyManager.Instance.RegisterEnemy(this);
+        }
     }
+
     void OnDisable()
-{
-    // Remove este inimigo da lista global quando ele morre/desativado
-    if (EnemyManager.allEnemies != null)
     {
-        EnemyManager.allEnemies.Remove(this);
+        if (EnemyManager.Instance != null)
+        {
+            EnemyManager.Instance.UnregisterEnemy(this);
+        }
     }
-}
+
     void Update()
     {
         if (target != null)
         {
             Vector2 direction = target.position - transform.position;
-            //a magnitude do vetor direction será maior quanto mais longe estiver do player, fazendo ele se mover mais rapido  quando longe e mais lento quando perto, para evitar isso, basta normalizar o valor
             normalizedDirection = direction.normalized;
         }
         UpdateAnimator();
         FlipSprite();
     }
+
     void FixedUpdate()
     {
         if (isKnockedBack)
@@ -65,6 +73,7 @@ public class EnemyAI : MonoBehaviour
         }
         rb.linearVelocity = normalizedDirection * moveSpeed;
     }
+
     public void ApplyKnockback(Vector2 direction, float force)
     {
         if (isKnockedBack) return;
@@ -85,11 +94,16 @@ public class EnemyAI : MonoBehaviour
 
     private void UpdateAnimator()
     {
-        animator.SetFloat("Speed", normalizedDirection.magnitude);
-        //altera a variavel speed dentro do animator com base na magnitude do moveinput, caso o player gere qualquer movimentação no personagem, a magnitude será maior que zero, e dentro do animator, a animação de andar precisa apenas q speed seja maior q 0.1
+        if (animator != null)
+        {
+            animator.SetFloat("Speed", normalizedDirection.magnitude);
+        }
     }
+
     private void FlipSprite()
     {
+        if (spriteRenderer == null) return;
+
         if (normalizedDirection.x < 0)
         {
             spriteRenderer.flipX = true;
@@ -99,20 +113,30 @@ public class EnemyAI : MonoBehaviour
             spriteRenderer.flipX = false;
         }
     }
-    //a função OnDestroy é chamada em todos os scripts de objetos quando são destruidos, como o script enemyHealth destroi o inimigo qnd a vida chega a zero, o script EnemyAI dele vai chamar a função OnDestroy abaixo, que vai tirar ele do array de inimigos no mapa
+
     private void OnDestroy()
     {
-        var playerExp = player.GetComponent<PlayerExp>();
-        if (playerExp != null)
+        if (!this.gameObject.scene.isLoaded) return;
+
+        if (player != null)
         {
-            playerExp.AddExp(this.exp); 
+            var playerExp = player.GetComponent<PlayerExp>();
+            if (playerExp != null)
+            {
+                playerExp.AddExp(this.exp);
+            }
+        }
+
+        if (EnemyManager.Instance != null)
+        {
+            EnemyManager.Instance.UnregisterEnemy(this);
         }
     }
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!collision.gameObject.CompareTag("Player")) return;
+        
         var playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {

@@ -3,50 +3,47 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-    [Header("Nome da Cena do Jogo")]
-    [Tooltip("Deve ser EXATAMENTE o nome do arquivo da sua cena de gameplay.")]
+    [Header("Configuração de Cenas")]
+    [Tooltip("Nome EXATO da cena de gameplay")]
     public string gameSceneName = "GameScene";
 
-    [Header("Painéis de UI")]
-    public GameObject mainPanel;      // Onde ficam os botões Iniciar/Config/Sair
-    public GameObject settingsPanel;  // Onde ficam as opções de volume, etc.
-
-    void Start()
+    [Header("Painéis da Interface")]
+    public GameObject mainMenuPanel;    
+    public GameObject settingsPanel;    
+    private void Start()
     {
-        // Garante que o painel principal aparece e as configurações iniciam fechadas
-        ShowMainPanel();
+        DontDestroyOnLoad(gameObject);
+        ShowMainMenu();
     }
 
-    // --- FUNÇÕES DOS BOTÕES (Ligue no OnClick) ---
+    // --- FUNÇÕES DOS BOTÕES ---
 
-    public void OnPlayClicked()
+    public void PlayGame()
     {
-        // Carrega a cena do jogo (mudança de cena)
         SceneManager.LoadScene(gameSceneName);
     }
 
-    public void OnSettingsClicked()
+    public void OpenSettings()
     {
-        mainPanel.SetActive(false);
+        mainMenuPanel.SetActive(false);
         settingsPanel.SetActive(true);
     }
 
-    public void OnQuitClicked()
+    public void CloseSettings()
     {
-        Debug.Log("O jogo foi fechado (funciona apenas na Build final).");
+        settingsPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Saindo do Jogo...");
         Application.Quit();
     }
 
-    // --- FUNÇÕES DO PAINEL DE CONFIGURAÇÕES ---
-
-    public void OnBackFromSettings()
+    private void ShowMainMenu()
     {
-        ShowMainPanel();
-    }
-
-    private void ShowMainPanel()
-    {
-        if(settingsPanel != null) settingsPanel.SetActive(false);
-        if(mainPanel != null) mainPanel.SetActive(true);
+        if (mainMenuPanel != null) mainMenuPanel.SetActive(true);
+        if (settingsPanel != null) settingsPanel.SetActive(false);
     }
 }
