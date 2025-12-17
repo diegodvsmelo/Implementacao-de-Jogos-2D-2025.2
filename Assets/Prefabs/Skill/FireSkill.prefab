@@ -105,6 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f13dfd76b4567294db524b39f4a7a312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileMovement
+  hitSound:
+  - {fileID: 8300000, guid: 7f263f81ee58e6043a2277fefb519cca, type: 3}
 --- !u!50 &909974210842638968
 Rigidbody2D:
   serializedVersion: 5

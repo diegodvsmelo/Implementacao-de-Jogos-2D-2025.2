@@ -3482,6 +3482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756c627ba32d1f442bea6f62c7b55c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkillQueueManager
+  fireball: {fileID: 8300000, guid: 560625cbb735bd0429f8d6cabc5c31d4, type: 3}
   animator: {fileID: 506964549}
   startingSkill: {fileID: 11400000, guid: ad358d088726fbb4aa380d7e504ad156, type: 2}
   activeSlots:

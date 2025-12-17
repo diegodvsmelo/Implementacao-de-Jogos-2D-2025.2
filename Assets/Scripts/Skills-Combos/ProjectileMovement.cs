@@ -11,8 +11,8 @@ public class ProjectileMovement : MonoBehaviour
 
     private Vector2 moveDirection;
     private bool isSetup = false;
-    public AudioClip aaAudioClip;
-
+    [Header("Audio")]
+    [SerializeField] private AudioClip[] hitSound;
     public void Setup(Vector2 dir, float spd, int dmg, int bounces, float range)
     {
         speed = spd;
@@ -44,6 +44,11 @@ public class ProjectileMovement : MonoBehaviour
             if(enemy != null)
             {
                 enemy.TakeDamage(damage);
+            }
+            if (hitSound != null && SoundEffectsManager.Instance != null)
+            {
+                // Usamos 'transform' para o som sair da posição onde o projétil morreu
+                SoundEffectsManager.Instance.PlayRandomSFXClip(hitSound, transform, 0.4f);
             }
 
             if (bouncesRemaining > 0)

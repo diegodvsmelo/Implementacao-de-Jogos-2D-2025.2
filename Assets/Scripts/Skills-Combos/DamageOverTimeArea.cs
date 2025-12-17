@@ -8,6 +8,7 @@ public class DamageOverTimeArea : MonoBehaviour
     public int damagePerTick;
     public float timeBetweenTicks;
     public float duration;
+    public AudioClip[] damageAudio;
 
     private BoxCollider2D areaCollider;
 
@@ -32,6 +33,7 @@ public class DamageOverTimeArea : MonoBehaviour
                 if (health != null)
                 {
                     health.TakeDamage(damagePerTick);
+                    SoundEffectsManager.Instance.PlayRandomSFXClip(damageAudio, transform, 0.4f);
                 }
             }
             yield return new WaitForSeconds(timeBetweenTicks);
