@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: ProjectileSpeed
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   upgradeName: Projectile Speed
-  description: Increase projectile speed by +1
+  description: Increase projectile speed by +10
   icon: {fileID: 1714823786935296888, guid: 9af59009116ac9147ba432d8a1f0c76c, type: 3}
   upgradeType: 13
-  value: 1
+  value: 10
   isPercentage: 0
-  maxLevel: 5
-  rarity: 3
+  maxLevel: 4
+  rarity: 2
   minimumPlayerLevel: 1
   requiredUpgrades: []
-  currentLevel: 0
+  currentLevel: 1

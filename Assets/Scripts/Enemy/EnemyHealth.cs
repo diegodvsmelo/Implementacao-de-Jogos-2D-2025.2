@@ -42,7 +42,7 @@ public class EnemyHealth : MonoBehaviour
         if (playerStats != null)
         {
             // Calcula crítico baseado nas stats do player
-            isCrit = Random.Range(0f, 100f) <= playerStats.criticalChance;
+            isCrit = Random.Range(0f, 1f) <= playerStats.criticalChance;
             finalDamage = isCrit ? damage * playerStats.criticalMultiplier : damage;
         }
         else

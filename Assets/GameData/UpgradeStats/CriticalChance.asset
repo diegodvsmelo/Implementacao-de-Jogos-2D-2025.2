@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: CriticalChance
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   upgradeName: Critical Chance
-  description: Increases the player's critical hit percentage by 10%.
+  description: Increases the player's critical hit percentage  +25%.
   icon: {fileID: 176742410393821804, guid: ea748c0b51063344b989417186142c8f, type: 3}
   upgradeType: 4
-  value: 1
+  value: 0.25
   isPercentage: 0
-  maxLevel: 5
+  maxLevel: 4
   rarity: 9
   minimumPlayerLevel: 1
   requiredUpgrades: []
