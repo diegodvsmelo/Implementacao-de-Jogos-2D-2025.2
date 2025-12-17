@@ -151,5 +151,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageOverTimeArea
   damagePerTick: 20
-  timeBetweenTicks: 0.1
+  timeBetweenTicks: 0.5
   duration: 5

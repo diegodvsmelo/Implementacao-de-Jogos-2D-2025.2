@@ -3291,7 +3291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetMarker: {fileID: 1173541351}
-  terminalVelocity: 3
+  terminalVelocity: 4
   slowingRadius: 1
   stopDistance: 0.1
   acceleration: 40
@@ -3443,13 +3443,13 @@ MonoBehaviour:
   healthBar: {fileID: 535286808}
   maxHealth: 100
   currentHealth: 0
-  moveSpeed: 3
+  moveSpeed: 4
   damage: 10
   damageMultiplier: 1
   projectileSpeed: 10
   attackSpeed: 0.7
   cooldownReductionMultiplier: 1
-  criticalChance: 50
+  criticalChance: 10
   criticalMultiplier: 3
   isShielded: 0
   shieldReduction: 0.8
