@@ -3470,6 +3470,7 @@ MonoBehaviour:
   criticalMultiplier: 3
   isShielded: 0
   shieldReduction: 0.8
+  lightAudio: {fileID: 8300000, guid: 23911fc5e0c666d4bbb8accdd998cc73, type: 3}
 --- !u!114 &506964560
 MonoBehaviour:
   m_ObjectHideFlags: 0

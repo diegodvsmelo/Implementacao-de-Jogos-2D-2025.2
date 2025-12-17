@@ -25,6 +25,7 @@ public class PlayerStats : MonoBehaviour
     [Header("Estado de Buffs")]
     public bool isShielded = false;
     [Range(0f, 1f)] public float shieldReduction = 0.5f;
+    public AudioClip lightAudio;
 
 
     private PlayerHealth playerHealthScript;
@@ -75,11 +76,10 @@ public class PlayerStats : MonoBehaviour
             moveSpeed *= speedMult; 
         }
         
-        Debug.Log("Luz Ativada: Escudo + Velocidade!");
-
         GameObject visualInstance = null;
         if (visualPrefab != null)
         {
+            SoundEffectsManager.Instance.PlaySFXClip(lightAudio, transform, 0.4f);
             visualInstance = Instantiate(visualPrefab, transform.position, Quaternion.identity, transform);
         }
 
@@ -97,8 +97,6 @@ public class PlayerStats : MonoBehaviour
         }
         
         if (visualInstance != null) Destroy(visualInstance);
-        
-        Debug.Log("Luz Desativada.");
     }
 
     //-----Funções de Modificação (Dano/Cura)-----
