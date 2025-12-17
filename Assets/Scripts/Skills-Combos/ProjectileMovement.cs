@@ -11,6 +11,7 @@ public class ProjectileMovement : MonoBehaviour
 
     private Vector2 moveDirection;
     private bool isSetup = false;
+    public AudioClip aaAudioClip;
 
     public void Setup(Vector2 dir, float spd, int dmg, int bounces, float range)
     {
@@ -45,14 +46,13 @@ public class ProjectileMovement : MonoBehaviour
                 enemy.TakeDamage(damage);
             }
 
-            //Lógica de Ricochete vs Destruição 
             if (bouncesRemaining > 0)
             {
                 HandleBounce(other.transform.position, other.gameObject);
             }
             else
             {
-                Destroy(gameObject); // Comportamento Fogo
+                Destroy(gameObject); 
             }
         }
     }

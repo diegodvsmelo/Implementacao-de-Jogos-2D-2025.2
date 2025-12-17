@@ -10,12 +10,12 @@ public class OrbitingSkillController : MonoBehaviour
     public float rotationSpeed = 100f;
 
     [Header("Estatísticas (Nível)")]
-    public int sphereCount = 3;
+    //public int sphereCount = 3;
     private bool hasSpawned = false;
 
     void Start()
     {
-        SpawnSpheres();
+        //SpawnSpheres();
         
     }
     void FixedUpdate()
@@ -27,18 +27,18 @@ public class OrbitingSkillController : MonoBehaviour
         }
     }
 
-    private void SpawnSpheres()
-    {
-        for (int i = 0; i < sphereCount; i++)
-        {
-            float angle = i * (360f / sphereCount);
-
-            Vector2 localPos = Quaternion.Euler(0, 0, angle) * (Vector2.up * orbitDistance);
-
-            GameObject sphere = Instantiate(spherePrefab, (Vector2)transform.position + localPos, Quaternion.identity, this.transform);
-
-            sphere.transform.localPosition = localPos;
-        }
-        hasSpawned = true;
-    }
+    //private void SpawnSpheres()
+    //{
+      //  for (int i = 0; i < sphereCount; i++)
+        //{
+          //  float angle = i * (360f / sphereCount);
+//
+  //          Vector2 localPos = Quaternion.Euler(0, 0, angle) * (Vector2.up * orbitDistance);
+//
+  //          GameObject sphere = Instantiate(spherePrefab, (Vector2)transform.position + localPos, Quaternion.identity, this.transform);
+//
+  //          sphere.transform.localPosition = localPos;
+    //    }
+      //  hasSpawned = true;
+    //}
 }

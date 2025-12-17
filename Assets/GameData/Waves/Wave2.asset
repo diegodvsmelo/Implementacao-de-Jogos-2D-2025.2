@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcee3d63033b7c7459b24ab5f043fca4, type: 3}
   m_Name: Wave2
   m_EditorClassIdentifier: Assembly-CSharp::WaveData
-  timeInSecToStart: 10
+  timeInSecToStart: 60
   enemyPool:
   - {fileID: 11400000, guid: f82775493a24ccd44b1e4c1b62e1a7fb, type: 2}
   cooldownBetweenSpawn: 1.5

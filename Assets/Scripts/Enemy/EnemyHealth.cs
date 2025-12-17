@@ -41,14 +41,14 @@ public class EnemyHealth : MonoBehaviour
         // Verifica se encontrou o PlayerStats
         if (playerStats != null)
         {
-            // Calcula crítico baseado nas stats do player
+            // Calcula crï¿½tico baseado nas stats do player
             isCrit = Random.Range(0f, 100f) <= playerStats.criticalChance;
             finalDamage = isCrit ? damage * playerStats.criticalMultiplier : damage;
         }
         else
         {
-            // Fallback: se não encontrou PlayerStats, usa valores padrão
-            Debug.LogWarning("PlayerStats não encontrado! Usando dano padrão.");
+            // Fallback: se nï¿½o encontrou PlayerStats, usa valores padrï¿½o
+            Debug.LogWarning("PlayerStats nï¿½o encontrado! Usando dano padrï¿½o.");
         }
 
         currentHealth -= (int)finalDamage;

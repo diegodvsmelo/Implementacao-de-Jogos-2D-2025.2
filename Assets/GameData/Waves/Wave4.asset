@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcee3d63033b7c7459b24ab5f043fca4, type: 3}
   m_Name: Wave4
   m_EditorClassIdentifier: Assembly-CSharp::WaveData
-  timeInSecToStart: 20
+  timeInSecToStart: 120
   enemyPool:
   - {fileID: 11400000, guid: 265ad3a49668ea349b5cb301a0d3ee7d, type: 2}
   - {fileID: 11400000, guid: f82775493a24ccd44b1e4c1b62e1a7fb, type: 2}

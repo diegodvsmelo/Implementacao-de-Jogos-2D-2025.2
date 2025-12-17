@@ -10,6 +10,7 @@ public class SoundEffectsManager : MonoBehaviour
     [SerializeField] private AudioSource sfxObject;
     void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         if(Instance == null)
         {
             Instance = this;
