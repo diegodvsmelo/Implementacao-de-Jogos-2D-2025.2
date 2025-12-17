@@ -7,6 +7,7 @@ public class NatureSummon : MonoBehaviour
     public int damage = 15;
     public float lifeTime = 6f; 
     public float attackRate = 1.0f;
+    public AudioClip audioClip;
 
     private Transform currentTarget;
     private float nextAttackTime = 0f;
@@ -71,6 +72,7 @@ public class NatureSummon : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+            
             if (Time.time >= nextAttackTime)
             {
                 EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
@@ -80,9 +82,7 @@ public class NatureSummon : MonoBehaviour
                     enemyHealth.TakeDamage(damage);
                     
                     nextAttackTime = Time.time + attackRate;
-                    
-                    //Animação de ataque ou som aqui
-                    Debug.Log("Arauto mordeu o inimigo!");
+                    SoundEffectsManager.Instance.PlaySFXClip(audioClip, transform, 0.4f);
                 }
             }
         }
