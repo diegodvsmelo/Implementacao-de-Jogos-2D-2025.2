@@ -1793,10 +1793,11 @@ MonoBehaviour:
   damagePerTick: 20
   timeBetweenTicks: 0.5
   duration: 5
-  damageAudio:
+  tickSounds:
   - {fileID: 8300000, guid: b121d5e3cc702524aa199f109b662100, type: 3}
   - {fileID: 8300000, guid: 41c0c621b90ef06489b0529db828740f, type: 3}
   - {fileID: 8300000, guid: efd0dd6d3528ba04cb1b1727eee089d6, type: 3}
+  tickVolume: 0.5
 --- !u!1 &8735207985461374694
 GameObject:
   m_ObjectHideFlags: 0
