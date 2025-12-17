@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Damage
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   upgradeName: Damage
-  description: Increases the damage of the player's attacks and abilities by 10%.
+  description: Increases the damage of the player's attacks and abilities by 10.
   icon: {fileID: -7126806317532677096, guid: e0a73ed65239af4469ca08c1e268bb47, type: 3}
   upgradeType: 3
-  value: 1
-  isPercentage: 1
+  value: 10
+  isPercentage: 0
   maxLevel: 5
   rarity: 6
   minimumPlayerLevel: 1
   requiredUpgrades: []
-  currentLevel: 0
+  currentLevel: 1

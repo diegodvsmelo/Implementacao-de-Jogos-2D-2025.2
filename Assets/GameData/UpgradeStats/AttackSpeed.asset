@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: AttackSpeed
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   upgradeName: Attack Speed
-  description: Increases the player's firing speed by +1.
+  description: Increases the player's firing speed by +20%.
   icon: {fileID: 7843083181360032193, guid: d4ccb3e7cff55ce4c94d59d7ad3eb751, type: 3}
   upgradeType: 6
-  value: 1
+  value: 0.1
   isPercentage: 0
   maxLevel: 5
-  rarity: 7
+  rarity: 2
   minimumPlayerLevel: 1
   requiredUpgrades: []
-  currentLevel: 0
+  currentLevel: 1

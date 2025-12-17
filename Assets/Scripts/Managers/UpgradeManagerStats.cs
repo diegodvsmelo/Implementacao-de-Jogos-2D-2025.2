@@ -9,7 +9,7 @@ public class UpgradeManagerStats : MonoBehaviour
     [SerializeField] private int upgradesPerLevel = 4; 
     
     [Header("UI")]
-    [SerializeField] private GameObject upgradePanel; 
+    [SerializeField] private GameObject upgradePanel;
     [SerializeField] private UpgradeOption[] upgradeOptions; 
     
     [Header("Balanceamento")]
@@ -20,9 +20,12 @@ public class UpgradeManagerStats : MonoBehaviour
     private int currentPlayerLevel = 1;
     
     public static UpgradeManagerStats Instance { get; private set; }
-    
+    private PlayerHealth playerHealthScript;
+    public GameObject player;
+
     private void Awake()
     {
+        playerHealthScript = player.GetComponent<PlayerHealth>();
         if (Instance == null)
         {
             Instance = this;
@@ -184,32 +187,56 @@ public class UpgradeManagerStats : MonoBehaviour
         // Aplica baseado no tipo
         switch (upgrade.upgradeType)
         {
+            case UpgradeType.AttackSpeed:
+                playerStats.UpgradeAttackSpeed(valueToAdd);
+                break;
+
+            case UpgradeType.Cooldown:
+                playerStats.UpgradeCooldown(valueToAdd);
+                break;
+
+            case UpgradeType.CriticalChance:
+                playerStats.UpgradeCriticalChance(valueToAdd);
+                break;
+            
+            case UpgradeType.CriticalMultiplier:
+                playerStats.UpgradeCriticalMultiplier(valueToAdd);
+                break;
+
+            case UpgradeType.Damage:
+                playerStats.UpgradeDamage(valueToAdd);
+                break;
+
+            case UpgradeType.DamageReduction:
+                playerStats.UpgradeDamageReduction(valueToAdd);
+                break;
+
+            //case UpgradeType.ExpGain:
+            //    playerStats.UpgradeExpGain(valueToAdd);
+            //    break;
+
+            case UpgradeType.HealthRegen:
+                Debug.Log("ENTROU1 " + upgrade.currentLevel);
+                playerStats.UpgradeHealthRegen(valueToAdd);
+                if (upgrade.currentLevel == 1)
+                {
+                    Debug.Log("ENTROU");
+                    StartCoroutine(playerHealthScript.HealthRegen());
+                }
+                break;
+
             case UpgradeType.MaxHealth:
                 playerStats.UpgradeHealth((int)valueToAdd); 
                 break;
             
-            case UpgradeType.Damage:
-                playerStats.damage += (int)valueToAdd;
-                break;
-            
             case UpgradeType.MoveSpeed:
-                playerStats.moveSpeed += valueToAdd;
+                playerStats.UpgradeMoveSpeed(valueToAdd);
                 break;
-            
-            case UpgradeType.CriticalChance:
-                playerStats.criticalChance += (int)valueToAdd;
+
+            case UpgradeType.ProjectileSpeed:
+                playerStats.UpgradeProjectileSpeed(valueToAdd);
                 break;
-            
-            case UpgradeType.CriticalMultiplier:
-                playerStats.criticalMultiplier += valueToAdd;
-                break;
-            
-            case UpgradeType.AttackSpeed:
-                playerStats.attackSpeed += valueToAdd;
-                break;
-            
-            // Adicione os outros casos conforme seus atributos
-            
+
             default:
                 Debug.LogWarning($"Tipo de upgrade não implementado: {upgrade.upgradeType}");
                 break;

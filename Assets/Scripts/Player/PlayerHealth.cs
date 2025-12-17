@@ -58,8 +58,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (isInvulnerable) return;
 
-        stats.currentHealth -= damage;
-        SoundEffectsManager.Instance.PlayRandomSFXClip(damageAudioClips, transform, 0.5f);
+        stats.currentHealth = (int)(stats.currentHealth - (damage * stats.damageReduction));
         
         if (stats.currentHealth > 0 && animator != null)
         {
@@ -177,13 +176,13 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator ShowGameOverDelay()
     {
-        yield return new WaitForSecondsRealtime(2.0f);
-
         gameOverScreen.SetActive(true);
         Time.timeScale = 0;
         animator.speed = 0;
+
+        yield return new WaitForSecondsRealtime(2.0f);
     }
-    
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;

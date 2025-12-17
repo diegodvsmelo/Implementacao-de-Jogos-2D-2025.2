@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: CriticalMultiplier
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   upgradeName: Critical Multiplier
-  description: Increases the critical damage multiplier by 20%.
+  description: Increases the critical damage multiplier +25%.
   icon: {fileID: 4402927252257099635, guid: 0965fd4fef96afc44a814a22b514c36c, type: 3}
   upgradeType: 5
-  value: 1
-  isPercentage: 1
-  maxLevel: 5
+  value: 0.25
+  isPercentage: 0
+  maxLevel: 4
   rarity: 9
   minimumPlayerLevel: 1
   requiredUpgrades: []

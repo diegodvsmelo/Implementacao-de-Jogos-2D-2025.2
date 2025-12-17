@@ -2300,7 +2300,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: df76dfb24075c49418b55430c3942690, type: 2}
   - {fileID: 11400000, guid: 8a156b8c09922234dbf104cf4145bff2, type: 2}
   - {fileID: 11400000, guid: 8e0d9cd97c3fdcd459927d3d910ac72a, type: 2}
-  - {fileID: 11400000, guid: b545b3b3acf549b418cd3da3c88ca7c9, type: 2}
   - {fileID: 11400000, guid: b60118474989b5744a0b627b088a6dc3, type: 2}
   - {fileID: 11400000, guid: 05795fee70aeb88499256230a6ef6172, type: 2}
   - {fileID: 11400000, guid: a3a1a30c4bfadc445968042b1409321e, type: 2}
@@ -2314,6 +2313,7 @@ MonoBehaviour:
   - {fileID: 1751665777}
   allowDuplicates: 0
   useRarityWeight: 1
+  player: {fileID: 506964548}
 --- !u!1 &396481114
 GameObject:
   m_ObjectHideFlags: 0
@@ -3461,14 +3461,16 @@ MonoBehaviour:
   healthBar: {fileID: 535286808}
   maxHealth: 100
   currentHealth: 0
-  moveSpeed: 4
+  moveSpeed: 3
   damage: 10
-  damageMultiplier: 1
   projectileSpeed: 10
   attackSpeed: 0.7
   cooldownReductionMultiplier: 1
-  criticalChance: 10
-  criticalMultiplier: 3
+  criticalChance: 0
+  criticalMultiplier: 1.75
+  healthRegen: 0
+  damageReduction: 1
+  expGain: 1
   isShielded: 0
   shieldReduction: 0.8
   lightAudio: {fileID: 8300000, guid: 23911fc5e0c666d4bbb8accdd998cc73, type: 3}

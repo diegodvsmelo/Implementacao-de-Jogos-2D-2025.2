@@ -19,7 +19,7 @@ MonoBehaviour:
   value: 1
   isPercentage: 0
   maxLevel: 5
-  rarity: 10
+  rarity: 1
   minimumPlayerLevel: 1
   requiredUpgrades: []
   currentLevel: 0

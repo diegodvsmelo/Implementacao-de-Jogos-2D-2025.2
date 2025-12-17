@@ -15,12 +15,14 @@ public class PlayerStats : MonoBehaviour
 
     [Header("Atributos de Combate")]
     public int damage;
-    public int damageMultiplier;
     public float projectileSpeed;
     public float attackSpeed;
     public float cooldownReductionMultiplier;
-    public int criticalChance;
+    public float criticalChance;
     public float criticalMultiplier;
+    public int healthRegen;
+    public float damageReduction;
+    public float expGain;
 
     [Header("Estado de Buffs")]
     public bool isShielded = false;
@@ -146,20 +148,61 @@ public class PlayerStats : MonoBehaviour
         Debug.Log("Vida Aumentada! Max: " + maxHealth);
     }
 
-    public void UpgradeSpeed(float amount)
+    //regen de vida, projetils
+
+    public void UpgradeAttackSpeed(float value)
     {
-        moveSpeed += amount;
-        Debug.Log("Velocidade Aumentada! Nova: " + moveSpeed);
+        attackSpeed -= value;
+        Debug.Log("Velocidade de ataque aumentado! Novo: " + attackSpeed);
+    }
+    public void UpgradeCooldown(float value)
+    {
+        cooldownReductionMultiplier -= value;
+        Debug.Log("Cooldown reduzido! Novo: " + cooldownReductionMultiplier);
+    }
+    public void UpgradeCriticalChance(float value)
+    {
+        criticalChance += value;
+        Debug.Log("criticalChance aumentado! Novo: " + criticalChance);
+    }
+    public void UpgradeCriticalMultiplier(float value)
+    {
+        criticalMultiplier += value;
+        Debug.Log("criticalMultiplier aumentado! Novo: " + criticalMultiplier);
+    }
+    public void UpgradeDamage(float value)
+    {
+        damage += (int)value;
+        Debug.Log("damage aumentado! Novo: " + damage);
     }
 
-    public void UpgradeDamage(float percentage)
+    public void UpgradeDamageReduction(float value)
     {
-        damage += (int)percentage;
-        Debug.Log("Dano Multiplicado! Novo: " + damage);
+        damageReduction -= value;
+        Debug.Log("damageReduction reduzido! Novo: " + damageReduction);
     }
-    public void UpgradeCooldown(float percentage)
+
+    public void UpgradeExpGain(float value)
     {
-        cooldownReductionMultiplier -= percentage;
-        Debug.Log("Cooldown reduzido! Novo: " + cooldownReductionMultiplier);
+        expGain += value;
+        Debug.Log("damage reduzido! Novo: " + expGain);
+    }
+
+    public void UpgradeHealthRegen(float value)
+    {
+        healthRegen += (int)value;
+        Debug.Log("healthRegen aumentado! Novo: " + healthRegen);
+    }
+
+    public void UpgradeMoveSpeed(float value)
+    {
+        moveSpeed += value;
+        Debug.Log("Velocidade de movimento aumentada! Nova: " + moveSpeed);
+    }
+
+    public void UpgradeProjectileSpeed(float value)
+    {
+        projectileSpeed += (int)projectileSpeed;
+        Debug.Log("Dano projectileSpeed! Novo: " + damage);
     }
 }

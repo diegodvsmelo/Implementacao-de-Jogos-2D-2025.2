@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: DamageReduction
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   upgradeName: Damage Reduction
-  description: Reduces damage received by 15%.
+  description: Reduces damage received by 8%.
   icon: {fileID: 6404778677824247896, guid: 6db81ec89311d9c44963002e6f0836a2, type: 3}
   upgradeType: 8
-  value: 1
+  value: 0.08
   isPercentage: 0
   maxLevel: 5
   rarity: 2

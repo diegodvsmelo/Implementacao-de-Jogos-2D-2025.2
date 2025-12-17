@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: MaxHealth
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   upgradeName: Maximum Life
-  description: Increases the player's maximum health by 5%.
+  description: Increases the player's maximum health +20.
   icon: {fileID: 6726084321763117244, guid: 75c630bb4462de64388bba076d697a6f, type: 3}
   upgradeType: 0
-  value: 50
-  isPercentage: 1
+  value: 20
+  isPercentage: 0
   maxLevel: 5
   rarity: 2
   minimumPlayerLevel: 1
   requiredUpgrades: []
-  currentLevel: 1
+  currentLevel: 0
