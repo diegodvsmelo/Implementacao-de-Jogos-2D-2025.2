@@ -5,6 +5,7 @@ public class PlayerExp : MonoBehaviour
     [Header("UI References")]
     public GameObject upgradeCanvasUI;
     public GameObject skillLearnUI;
+    public ExpBar expBar;
 
     [Header("Variáveis de Nível")]
     public float xpToLevelUp;
@@ -18,6 +19,11 @@ public class PlayerExp : MonoBehaviour
     {
         if (upgradeCanvasUI != null) upgradeCanvasUI.SetActive(false);
         if (skillLearnUI != null) skillLearnUI.SetActive(false);
+        if (expBar != null)
+        {
+            expBar.SetMaxExp(xpToLevelUp);
+            expBar.SetExp(currentXp);
+        }
     }
 
     void Awake()
@@ -30,15 +36,25 @@ public class PlayerExp : MonoBehaviour
     {
         currentXp += amount;
 
-        while (currentXp >= xpToLevelUp)
+    if (expBar != null)
+    {
+        expBar.AddExp(amount);
+    }
+
+    while (currentXp >= xpToLevelUp)
+    {
+        currentXp -= xpToLevelUp;
+        level++;
+        xpToLevelUp *= xpMultiplierIncrease;
+
+        if (expBar != null)
         {
-            currentXp -= xpToLevelUp; 
-            
-            level++;
-            
-            xpToLevelUp *= xpMultiplierIncrease;
-            HandleLevelUp(); 
+            expBar.SetMaxExp(xpToLevelUp);
+            expBar.SetExp(currentXp);
         }
+
+        HandleLevelUp();
+    }
     }
 
     public void HandleLevelUp()
