@@ -14,10 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
   skillName: Lightning
   effectPrefab: {fileID: 4195311821623240294, guid: 1772a6913bdc24cc6b0a36452b5dc634, type: 3}
-  cooldown: 1
-  maxCharges: 5
+  cooldown: 2
+  maxCharges: 4
   icon: {fileID: -1105373136404518916, guid: 1b906fb34cbe72c40a824097bb11411d, type: 3}
-  damage: 10
+  damage: 50
   bounceCount: 3
   bounceRange: 5
+  buffDuration: 0
+  moveSpeedMultiplier: 0
+  durationOnGround: 0
+  pullForce: 0
+  pullRadius: 0
   behaviorType: 4

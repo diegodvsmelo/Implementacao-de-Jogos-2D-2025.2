@@ -155,5 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8654b7aaf6b294b99b32d8e581f90db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChainLightningBehavior
+  audioClip: {fileID: 8300000, guid: 171048f7ff356964893178ce6aad19e3, type: 3}
   lineRenderer: {fileID: 0}
   duration: 0.2

@@ -23,6 +23,6 @@ MonoBehaviour:
   buffDuration: 0
   moveSpeedMultiplier: 0
   durationOnGround: 5
-  pullForce: 40
+  pullForce: 80
   pullRadius: 1
   behaviorType: 7

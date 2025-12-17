@@ -7,6 +7,7 @@ public class ChainLightningBehavior : MonoBehaviour
     private int damage;
     private int maxBounces;
     private float range;
+    public AudioClip audioClip;
     
     [Header("Visual")]
     public LineRenderer lineRenderer;
@@ -44,6 +45,7 @@ public class ChainLightningBehavior : MonoBehaviour
 
             // Aplica dano
             EnemyHealth hp = target.GetComponent<EnemyHealth>();
+            SoundEffectsManager.Instance.PlaySFXClip(audioClip, transform, 0.4f);
             if (hp != null)
             {
                 hp.TakeDamage(damage);

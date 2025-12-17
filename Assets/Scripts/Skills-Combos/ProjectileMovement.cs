@@ -11,7 +11,8 @@ public class ProjectileMovement : MonoBehaviour
 
     private Vector2 moveDirection;
     private bool isSetup = false;
-
+    [Header("Audio")]
+    [SerializeField] private AudioClip[] hitSound;
     public void Setup(Vector2 dir, float spd, int dmg, int bounces, float range)
     {
         speed = spd;
@@ -44,15 +45,19 @@ public class ProjectileMovement : MonoBehaviour
             {
                 enemy.TakeDamage(damage);
             }
+            if (hitSound != null && SoundEffectsManager.Instance != null)
+            {
+                // Usamos 'transform' para o som sair da posição onde o projétil morreu
+                SoundEffectsManager.Instance.PlayRandomSFXClip(hitSound, transform, 0.4f);
+            }
 
-            //Lógica de Ricochete vs Destruição 
             if (bouncesRemaining > 0)
             {
                 HandleBounce(other.transform.position, other.gameObject);
             }
             else
             {
-                Destroy(gameObject); // Comportamento Fogo
+                Destroy(gameObject); 
             }
         }
     }

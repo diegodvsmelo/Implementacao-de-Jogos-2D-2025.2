@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     [Header("Audio")]
     public AudioSource soundtrack;
     public AudioClip deathAudio;
+    public AudioClip[] damageAudioClips;
     
     [Header("Interface (UI)")]
     public HealthBar healthBar; // <--- ARRASTE A BARRA DE VIDA AQUI NO INSPECTOR
@@ -46,7 +47,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
-        // Garante que a barra de vida comece sincronizada com o status atual do player
         if (healthBar != null)
         {
             healthBar.SetMaxHealth(stats.maxHealth, false);

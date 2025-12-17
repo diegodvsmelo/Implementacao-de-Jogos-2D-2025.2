@@ -6,6 +6,7 @@ public class SkillQueueManager : MonoBehaviour
 {
     //Helpers variable
     Vector2 worldPosition;
+    public AudioClip fireball;
     [SerializeField] private Animator animator;
 
     [Header("Configuração Inicial")]
@@ -210,6 +211,7 @@ public class SkillQueueManager : MonoBehaviour
         Vector2 direction = (mousePos - (Vector2)transform.position).normalized;
 
         GameObject proj = Instantiate(skill.effectPrefab, transform.position, Quaternion.identity);
+        SoundEffectsManager.Instance.PlaySFXClip(fireball,transform,0.4f);
 
         ProjectileMovement script = proj.GetComponent<ProjectileMovement>();
         

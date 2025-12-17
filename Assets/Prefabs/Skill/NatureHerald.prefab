@@ -110,6 +110,7 @@ MonoBehaviour:
   damage: 50
   lifeTime: 5
   attackRate: 1
+  audioClip: {fileID: 8300000, guid: 67a7b6032108cca449c2b479f8b38450, type: 3}
 --- !u!50 &8515630013047925216
 Rigidbody2D:
   serializedVersion: 5

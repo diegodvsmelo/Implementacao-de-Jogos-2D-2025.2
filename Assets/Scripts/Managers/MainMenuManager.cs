@@ -9,12 +9,15 @@ public class MainMenuManager : MonoBehaviour
 
     [Header("Painéis da Interface")]
     public GameObject mainMenuPanel;    
-    public GameObject settingsPanel;    
+    public GameObject settingsPanel;   
+    
+
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
         ShowMainMenu();
     }
+    
 
     // --- FUNÇÕES DOS BOTÕES ---
 

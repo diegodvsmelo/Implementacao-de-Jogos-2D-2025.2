@@ -14,10 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
   skillName: Nature
   effectPrefab: {fileID: 8338147856824281007, guid: c277849b127d0f4428bd85f12241ebe8, type: 3}
-  cooldown: 1
-  maxCharges: 5
+  cooldown: 4.5
+  maxCharges: 3
   icon: {fileID: 7275561814827643719, guid: 8967ca20699177f48b681e6f2c61819c, type: 3}
   damage: 50
   bounceCount: 0
   bounceRange: 0
+  buffDuration: 0
+  moveSpeedMultiplier: 0
+  durationOnGround: 0
+  pullForce: 0
+  pullRadius: 0
   behaviorType: 5
