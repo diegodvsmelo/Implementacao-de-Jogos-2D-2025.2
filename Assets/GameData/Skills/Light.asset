@@ -15,11 +15,14 @@ MonoBehaviour:
   skillName: Light
   effectPrefab: {fileID: 3359345308796803035, guid: 49364ce5c5ef8b94ead6ee5e816ebfb6, type: 3}
   cooldown: 4
-  maxCharges: 3
+  maxCharges: 2
   icon: {fileID: 3185874089565593972, guid: c3c1817c0bacb104e8001862a08e40e9, type: 3}
   damage: 0
   bounceCount: 0
   bounceRange: 0
-  buffDuration: 3
+  buffDuration: 2
   moveSpeedMultiplier: 1.5
+  durationOnGround: 0
+  pullForce: 0
+  pullRadius: 0
   behaviorType: 6

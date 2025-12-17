@@ -14,10 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SkillData
   skillName: Water
   effectPrefab: {fileID: 41421025288903831, guid: 8ebb8d84e247a834794a8a13a6a09b5e, type: 3}
-  cooldown: 1
+  cooldown: 2.5
   maxCharges: 5
   icon: {fileID: -6104768699585684500, guid: 8959f93e2ba6ed141bf7415f113b806b, type: 3}
   damage: 0
   bounceCount: 0
   bounceRange: 0
+  buffDuration: 0
+  moveSpeedMultiplier: 0
+  durationOnGround: 0
+  pullForce: 0
+  pullRadius: 0
   behaviorType: 3

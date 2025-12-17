@@ -104,6 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e95932c974dede4184c09a99a9072bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlackHoleSkill
+  tickSound: {fileID: 8300000, guid: 8d5b32c2789d34847af52d5bdb4ff48e, type: 3}
+  tickVolume: 0.4
 --- !u!58 &6881306535117852464
 CircleCollider2D:
   m_ObjectHideFlags: 0

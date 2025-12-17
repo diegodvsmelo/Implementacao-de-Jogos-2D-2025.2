@@ -15,4 +15,5 @@ MonoBehaviour:
   timeInSecToStart: 60
   enemyPool:
   - {fileID: 11400000, guid: f82775493a24ccd44b1e4c1b62e1a7fb, type: 2}
-  cooldownBetweenSpawn: 1.5
+  - {fileID: 11400000, guid: 265ad3a49668ea349b5cb301a0d3ee7d, type: 2}
+  cooldownBetweenSpawn: 1

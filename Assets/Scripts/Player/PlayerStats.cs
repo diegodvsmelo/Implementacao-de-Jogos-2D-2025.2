@@ -24,7 +24,7 @@ public class PlayerStats : MonoBehaviour
 
     [Header("Estado de Buffs")]
     public bool isShielded = false;
-    [Range(0f, 1f)] public float shieldReduction = 0.8f;
+    [Range(0f, 1f)] public float shieldReduction = 0.5f;
 
 
     private PlayerHealth playerHealthScript;
