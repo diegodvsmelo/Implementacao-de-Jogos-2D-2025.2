@@ -141,3 +141,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OrbitingSphere
   damage: 80
+  audioClip: {fileID: 8300000, guid: 180e4d4a23593bc40b3b5b513e2f839c, type: 3}
